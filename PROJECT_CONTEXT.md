@@ -611,6 +611,17 @@ Current result:
   - polite out-of-scope handling
   - logging contract for noisy transport loggers
   - voice startup/runtime logs for active model/config selection and latency reporting
+  - retrieval regression for explicit multi-bank comparison query (`Acba` + `Inecobank`)
+  - ingestion self-heal path for legacy chunk metadata and missing vector records on unchanged hashes
+
+### KB validation checks used in this update
+
+- `python -m scripts.clean --bank Acba --topic deposits`
+- `python -m scripts.clean --bank Inecobank --topic deposits`
+- `python -m scripts.clean --bank Inecobank --topic credits`
+- `python -m scripts.ingest`
+- runtime integrity check: active SQLite chunks count matches local vector index count (`452 == 452`)
+- representative retrieval questions confirmed against stored sources for Inecobank/Acba deposit scenarios
 
 ## Recommended local verification
 

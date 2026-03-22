@@ -484,6 +484,17 @@ python -m scripts.ingest
 
 Ingestion updates changed sources by `content_hash`. The current ingestion logic also auto-rebuilds unchanged sources when it detects legacy chunk metadata or missing vectors, so older KB snapshots migrate forward without manual DB reset.
 
+Targeted refresh examples:
+
+```powershell
+python -m scripts.scrape --bank Inecobank --topic deposits
+python -m scripts.scrape --bank Inecobank --topic credits
+python -m scripts.clean --bank Inecobank
+python -m scripts.ingest --bank Inecobank
+```
+
+If Inecobank list pages return intermittent Cloudflare `403`, re-run the same scrape command; previously ingested detail pages remain in KB unless overwritten.
+
 ## How to verify
 
 ### Automated tests
