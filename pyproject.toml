@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "armenian-voice-ai-support-agent"
+version = "0.1.0"
+description = "Local Armenian banking support agent with scraping, retrieval, OpenAI and Telegram demo UI."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.12",
+    "cloudscraper>=1.2",
+    "livekit>=1.1.2",
+    "livekit-api>=1.1.0",
+    "numpy>=1.26",
+    "openai>=1.30",
+    "python-dotenv>=1.0",
+    "python-telegram-bot>=21.0",
+    "requests>=2.32",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+init_db = "scripts.init_db:main"
+scrape = "scripts.scrape:main"
+clean = "scripts.clean:main"
+ingest = "scripts.ingest:main"
+run_bot = "scripts.run_bot:main"
+run_voice_agent = "scripts.run_voice_agent:main"
+run_demo_stack = "scripts.run_demo_stack:main"
+generate_livekit_token = "scripts.generate_livekit_token:main"
+run_livekit_test_ui = "scripts.run_livekit_test_ui:main"
+
+[tool.setuptools.packages.find]
+include = ["app*", "scripts*"]
+
+[tool.setuptools.package-data]
+"app.web_ui" = ["static/*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

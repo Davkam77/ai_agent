@@ -1,0 +1,18 @@
+{
+  "bank_name": "Acba",
+  "topic": "deposits",
+  "source_url": "https://www.acba.am/en/individuals/save-and-invest/deposits",
+  "page_title": "Acba deposits seed index",
+  "raw_text": "Discovered child pages\nhttps://www.acba.am/en/individuals/save-and-invest/deposits/classic\nhttps://www.acba.am/en/individuals/save-and-invest/deposits/accumulative\nhttps://www.acba.am/en/individuals/save-and-invest/deposits/family\nhttps://www.acba.am/en/individuals/save-and-invest/deposits/for-children",
+  "fetched_at": "2026-03-22T09:58:16+00:00",
+  "content_hash": "039300246e950ee394d44064a93fab644d3858d60ca8f6b5b78a0c5545068d93",
+  "structured_data": {
+    "page_type": "acba_seed_index",
+    "child_urls": [
+      "https://www.acba.am/en/individuals/save-and-invest/deposits/classic",
+      "https://www.acba.am/en/individuals/save-and-invest/deposits/accumulative",
+      "https://www.acba.am/en/individuals/save-and-invest/deposits/family",
+      "https://www.acba.am/en/individuals/save-and-invest/deposits/for-children"
+    ]
+  }
+}

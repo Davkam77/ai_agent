@@ -1,0 +1,18 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "branch_locations",
+  "source_url": "https://www.inecobank.am/en/map",
+  "page_title": "Contact Us | INECOBANK",
+  "raw_text": "Contact Us | INECOBANK\nInecobank branch extraction is pending.\nThe current /en/map page is mostly Google Maps rendering and UI controls.\nA stable list-view DOM selector set or a documented XHR branch dataset is required.",
+  "fetched_at": "2026-03-22T09:58:22+00:00",
+  "content_hash": "d20ee3bfbc7a9f49d4de8253e84cda021b6477cb9e0ec2ba0206eab8cfd92f92",
+  "structured_data": {
+    "page_type": "inecobank_branches_pending",
+    "bank_name": "Inecobank",
+    "topic": "branch_locations",
+    "page_title": "Contact Us | INECOBANK",
+    "source_url": "https://www.inecobank.am/en/map",
+    "status": "pending",
+    "reason": "The current /en/map HTML is mostly Google Maps rendering and controls. A stable list-view DOM or a documented XHR dataset is required before branch extraction can be enabled."
+  }
+}

@@ -1,0 +1,8 @@
+[console_scripts]
+clean = scripts.clean:main
+generate_livekit_token = scripts.generate_livekit_token:main
+ingest = scripts.ingest:main
+init_db = scripts.init_db:main
+run_bot = scripts.run_bot:main
+run_voice_agent = scripts.run_voice_agent:main
+scrape = scripts.scrape:main

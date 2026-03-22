@@ -1,0 +1,23 @@
+{
+  "bank_name": "Acba",
+  "topic": "credits",
+  "source_url": "https://www.acba.am/en/individuals/loans/mortgage/constructors/capital-park",
+  "page_title": "Capital Park",
+  "raw_text": "Capital Park\nNow it is your turn to move to a new apartment\nCTA links\nacba digital: https://www.acbadigital.am\nLast updated: In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 21.01.2026 16:39",
+  "fetched_at": "2026-03-22T09:58:12+00:00",
+  "content_hash": "a5c66d0ef841c001428a0519d5625ffa3dcccd45d9dca703492c2441fedd8aff",
+  "structured_data": {
+    "page_type": "acba_product_page",
+    "title": "Capital Park",
+    "summary": "Now it is your turn to move to a new apartment",
+    "business_card": [],
+    "tabs": [],
+    "cta_links": [
+      {
+        "label": "acba digital",
+        "href": "https://www.acbadigital.am"
+      }
+    ],
+    "last_update": "In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 21.01.2026 16:39"
+  }
+}

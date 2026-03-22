@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LiveKit Voice Test UI</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/livekit-client@2.17.2/dist/livekit-client.umd.min.js"></script>
+    <script defer src="/app.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <h1>LiveKit Voice Test UI</h1>
+        <p class="lede">
+          Minimal local debug client for the Armenian Voice AI support agent.
+        </p>
+
+        <div class="form-grid">
+          <label>
+            <span>LiveKit URL</span>
+            <input id="livekitUrl" type="text" spellcheck="false" />
+          </label>
+          <label>
+            <span>Room</span>
+            <input id="roomName" type="text" spellcheck="false" />
+          </label>
+          <label>
+            <span>Identity</span>
+            <input id="identity" type="text" spellcheck="false" />
+          </label>
+        </div>
+
+        <label class="token-field">
+          <span>Access token</span>
+          <textarea id="token" rows="5" spellcheck="false" placeholder="Paste a LiveKit token or generate one locally."></textarea>
+        </label>
+
+        <div class="button-row">
+          <button id="generateTokenButton" type="button">Generate token</button>
+          <button id="connectButton" type="button">Connect</button>
+          <button id="disconnectButton" type="button" disabled>Disconnect</button>
+          <button id="micButton" type="button" disabled>Mute mic</button>
+          <button id="resumeAudioButton" type="button" disabled>Resume audio</button>
+        </div>
+      </section>
+
+      <section class="panel compact">
+        <div class="status-line">
+          <span class="label">Connection</span>
+          <span id="connectionStatus" class="pill disconnected">Disconnected</span>
+        </div>
+        <div class="status-line">
+          <span class="label">Mic</span>
+          <span id="micStatus">Off</span>
+        </div>
+        <div class="status-line">
+          <span class="label">Agent audio</span>
+          <span id="remoteAudioStatus">Waiting for remote audio</span>
+        </div>
+        <div class="status-line">
+          <span class="label">Active speakers</span>
+          <span id="activeSpeakers">None</span>
+        </div>
+        <div class="status-note" id="statusMessage">Ready.</div>
+      </section>
+
+      <section class="panel">
+        <h2>Event log</h2>
+        <ul id="eventLog" class="event-log"></ul>
+      </section>
+
+      <section class="panel">
+        <h2>Transcript / status</h2>
+        <div id="transcriptFeed" class="transcript-feed">
+          No transcript stream yet. If the room emits transcription events later, they will appear here.
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Remote audio elements</h2>
+        <div id="audioContainer" class="audio-container"></div>
+      </section>
+    </main>
+  </body>
+</html>
+

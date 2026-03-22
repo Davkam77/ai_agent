@@ -1,0 +1,346 @@
+Metadata-Version: 2.4
+Name: armenian-voice-ai-support-agent
+Version: 0.1.0
+Summary: Local Armenian banking support agent with scraping, retrieval, OpenAI and Telegram demo UI.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: cloudscraper>=1.2
+Requires-Dist: livekit>=1.1.2
+Requires-Dist: livekit-api>=1.1.0
+Requires-Dist: numpy>=1.26
+Requires-Dist: openai>=1.30
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: python-telegram-bot>=21.0
+Requires-Dist: requests>=2.32
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+
+# Armenian Voice AI Support Agent
+
+Local Python project for an Armenian banking support agent that answers only within three supported topics:
+
+- `credits`
+- `deposits`
+- `branch_locations`
+
+The system uses a local knowledge base built only from official bank websites. Telegram remains a demo text UI. The primary target runtime is now a self-hosted LiveKit OSS voice agent.
+
+## Architecture
+
+```text
+official bank pages
+  ->
+scraping
+  ->
+raw JSON
+  ->
+cleaning
+  ->
+clean JSON
+  ->
+chunking + embeddings
+  ->
+SQLite metadata + local numpy vector store
+  ->
+SupportAgentService
+  ->
+conversational flow or retrieval flow
+  ->
+OpenAI grounded answer generation
+  ->
+Telegram demo UI or LiveKit OSS voice runtime
+```
+
+## Why the pipeline is split as raw -> clean -> ingest
+
+- `raw JSON` preserves exactly what was collected from official sources.
+- `clean JSON` separates normalization from fetching and makes cleanup repeatable.
+- `SQLite` stores source metadata, active/inactive state, and chunk traceability.
+- The local numpy vector store keeps embeddings local and lightweight.
+- Runtime never scrapes live during user interaction.
+- Adding a new bank usually means adding source configs and, when needed, a bank-specific extractor.
+
+## Current bank coverage
+
+### Acba
+
+- bank-specific extractor for product pages and branches
+- child-page expansion from seed pages
+- current KB coverage is strongest here
+
+### Ameriabank
+
+- generic extractor for deposits, credits, and service-network page
+- current KB coverage is shallower because extraction is still mostly list/static level
+
+### Inecobank
+
+- bank-specific extractor for deposits list page
+- bank-specific extractor for consumer loans list page
+- branches are still intentionally excluded from final retrieval because `/en/map` is not yet a stable branch-record source
+
+## Runtime flow
+
+### Conversational flow
+
+Short conversational messages do not hit retrieval:
+
+- greetings
+- thanks
+- help / capability questions
+- short acknowledgements
+
+These responses are short, natural, and Armenian.
+
+### Knowledge retrieval flow
+
+For supported banking questions the runtime does:
+
+1. normalize the question
+2. detect language
+3. classify topic
+4. detect bank if possible
+5. build a multilingual retrieval query
+6. run topic-scoped vector search
+7. rerank with hybrid semantic + lexical scoring
+8. diversify results across banks when the user did not specify a bank
+9. generate an Armenian answer only from retrieved official evidence
+
+If a requested field is not present in the retrieved official data, the answer says so explicitly instead of inventing it.
+
+## LiveKit OSS voice runtime
+
+The previous voice scaffold has been replaced with a minimal working runtime built around the existing backend. Voice does not introduce a separate knowledge path.
+
+### What was added
+
+Added files:
+
+- `app/voice/audio.py`
+- `app/voice/providers.py`
+- `app/voice/token.py`
+- `scripts/run_voice_agent.py`
+- `scripts/generate_livekit_token.py`
+- `tests/test_voice_runtime.py`
+
+Changed files:
+
+- `app/config/settings.py`
+- `app/bootstrap.py`
+- `app/llm/openai_client.py`
+- `app/voice/interfaces.py`
+- `app/voice/livekit_runtime.py`
+- `pyproject.toml`
+- `.env.example`
+- `README.md`
+- `PROJECT_CONTEXT.md`
+
+### Why there was a problem
+
+- the project only had a LiveKit abstraction boundary, not a real room participant runtime
+- there was no server-side token flow inside the project
+- there was no OpenAI STT/TTS wiring behind the existing voice interfaces
+- there was no documented way to run voice locally end to end
+
+### How it works now
+
+The LiveKit agent flow is now:
+
+1. connect the agent to a self-hosted LiveKit room as a hidden participant
+2. subscribe to remote microphone audio tracks
+3. segment incoming audio into utterances with a lightweight silence detector
+4. send utterance WAV bytes to OpenAI STT with Armenian-first settings
+5. pass the transcript into the existing `SupportAgentService`
+6. let `SupportAgentService` choose conversational vs retrieval flow
+7. synthesize the final Armenian answer with OpenAI TTS
+8. publish synthesized audio back into the same LiveKit room as an audio track
+
+The voice runtime reuses:
+
+- `SupportAgentService`
+- `TopicClassifier`
+- `RetrievalService`
+- existing refusal logic
+- existing conversational flow
+- existing final answer sanitization
+
+## Environment
+
+Copy `.env.example` to `.env` and fill values.
+
+### Required for backend and voice
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+LIVEKIT_URL=ws://localhost:7880
+LIVEKIT_API_KEY=your_livekit_api_key_here
+LIVEKIT_API_SECRET=your_livekit_api_secret_here
+DATABASE_URL=sqlite:///./data/bank_support_agent.db
+VECTOR_DB_PATH=./data/vector_store
+SCRAPER_OUTPUT_DIR=./data
+LOG_LEVEL=INFO
+```
+
+### Required only for Telegram demo UI
+
+```env
+TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
+```
+
+### Optional voice defaults already supported
+
+```env
+OPENAI_STT_MODEL=gpt-4o-mini-transcribe
+OPENAI_TTS_MODEL=gpt-4o-mini-tts
+OPENAI_TTS_VOICE=sage
+LIVEKIT_ROOM_NAME=bank-support-demo
+LIVEKIT_AGENT_IDENTITY=bank-support-agent
+```
+
+Important:
+
+- store real secrets only in `.env`
+- keep `.env.example` placeholder-only
+- `LIVEKIT_API_SECRET=secret` works for local dev examples but is too weak for real deployments
+
+## Local run
+
+### Install
+
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+pip install -e .[dev]
+```
+
+### Build the local KB
+
+```powershell
+python -m scripts.init_db
+python -m scripts.scrape
+python -m scripts.clean
+python -m scripts.ingest
+```
+
+### Run Telegram demo bot
+
+```powershell
+python -m scripts.run_bot
+```
+
+### Run LiveKit OSS voice agent
+
+Start the self-hosted LiveKit server:
+
+```powershell
+livekit-server --dev
+```
+
+Start the voice agent:
+
+```powershell
+python -m scripts.run_voice_agent --room bank-support-demo
+```
+
+Generate a client token for a human tester:
+
+```powershell
+python -m scripts.generate_livekit_token --room bank-support-demo --identity local-user
+```
+
+Join the same room with any LiveKit-compatible client, publish microphone audio, and speak Armenian. The agent joins the room separately and replies with synthesized Armenian speech.
+
+## How to refresh bank data
+
+```powershell
+python -m scripts.scrape
+python -m scripts.clean
+python -m scripts.ingest
+```
+
+The ingestion step updates only changed sources by `content_hash`.
+
+## How to verify
+
+### Automated tests
+
+```powershell
+pytest -q
+```
+
+Current result after the voice update:
+
+- `30 passed`
+
+### Voice bootstrap and token flow
+
+```powershell
+python -m scripts.generate_livekit_token --room smoke-room --identity smoke-user
+python -c "from app.bootstrap import build_settings, build_voice_runtime; s=build_settings(); r=build_voice_runtime(s); print(type(r).__name__, r.room_name, r.agent_identity)"
+```
+
+### Local end-to-end voice flow
+
+1. start `livekit-server --dev`
+2. run `python -m scripts.run_voice_agent --room bank-support-demo`
+3. generate a participant token with `python -m scripts.generate_livekit_token --room bank-support-demo --identity local-user`
+4. join that room from a LiveKit-compatible client
+5. ask Armenian questions such as:
+   - `Ի՞նչ ավանդներ կան։`
+   - `Որքա՞ն է նվազագույն գումարը ավանդ բացելու համար։`
+   - `Ի՞նչ սպառողական վարկեր կան։`
+   - `Որտե՞ղ է գտնվում Arabkir մասնաճյուղը։`
+   - `Բարև`
+
+Expected behavior:
+
+- small-talk should stay conversational and not hit retrieval
+- supported banking questions should go through retrieval
+- mixed Armenian + English product-name questions should still retrieve relevant chunks
+- refusal should happen only when the KB really lacks official evidence
+- internal debug labels must not appear in final spoken or text responses
+
+### What was actually verified in this update
+
+- `pytest -q` passed with `30 passed`
+- `python -m scripts.generate_livekit_token --room smoke-room --identity smoke-user` produced a valid token
+- `build_voice_runtime()` bootstrap completed successfully
+- direct `rtc.Room.connect()` verification against `ws://localhost:7880` failed in this environment with connection refused, so a live audio round-trip was not completed during this update session
+
+## Limitations
+
+- `Inecobank` branches are still pending because `/en/map` does not yet expose a stable branch-record source for ingestion.
+- `Ameriabank` deposits and consumer-loan coverage is still shallow in the current KB because the extractor still captures mostly list-level/static content, not full product-detail fields.
+- `Inecobank` deposit list pages expose product cards, but not every detail field such as exact rates, currencies, or minimum amounts for each product.
+- The current voice runtime uses a lightweight silence detector, not a production-grade VAD/turn detector.
+- A bundled browser/mobile LiveKit client is not included in this repo; local voice testing currently assumes any external LiveKit-compatible client.
+- Telegram remains a demo UI, not the main architecture.
+
+## What needs to be sent
+
+If deeper KB coverage or a fully self-contained local demo is required, these exact gaps remain:
+
+- `Inecobank`
+  - page: `https://www.inecobank.am/en/Individual/deposits/simple`
+  - missing fields in KB: exact interest rate, currencies, minimum amount, term for `Simple Deposit`
+  - needed: stable detail-page selectors for rate/currency/min-amount/term, or the XHR/JSON response used to populate these fields
+- `Inecobank`
+  - page: `https://www.inecobank.am/en/map`
+  - missing fields in KB: final branch records and schedules
+  - needed: stable branch-card DOM selectors or XHR/JSON response sample with branch data
+- `Ameriabank`
+  - page: `https://ameriabank.am/en/personal/saving/deposits/see-all`
+  - missing fields in KB: deposit currencies, minimum amount, detailed conditions per product
+  - needed: selectors for product-detail cards/pages, or XHR/JSON response sample for deposit detail data
+- `Ameriabank`
+  - page: `https://ameriabank.am/en/personal/loans/consumer-loans/consumer-loans`
+  - missing fields in KB: detailed consumer-loan conditions per product
+  - needed: selectors for per-product detail sections/pages, or XHR/JSON response sample
+- `Ameriabank`
+  - page: `https://ameriabank.am/en/service-network`
+  - missing fields in KB: full branch list beyond head office
+  - needed: stable branch-list selectors or XHR/JSON response sample for service-network data
+- `LiveKit room client`
+  - missing from repo: a bundled browser/mobile client for joining the room and publishing microphone audio
+  - needed only if the repository itself must provide the full tester client instead of relying on any external LiveKit-compatible client

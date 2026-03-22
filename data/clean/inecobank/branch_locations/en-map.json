@@ -1,0 +1,9 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "branch_locations",
+  "source_url": "https://www.inecobank.am/en/map",
+  "page_title": "Contact Us | INECOBANK",
+  "clean_text": "",
+  "fetched_at": "2026-03-22T09:58:22+00:00",
+  "content_hash": "d20ee3bfbc7a9f49d4de8253e84cda021b6477cb9e0ec2ba0206eab8cfd92f92"
+}

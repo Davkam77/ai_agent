@@ -1,0 +1,1467 @@
+[
+  {
+    "chunk_id": "002363e99d2b3f4a52b869f5f468bf120f1faee51c9b3a60f604bc3b173eb406",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "017dc79d96e9ce2bccbcbd15a4234103b9bf2fc98d46fffbbb9eb75af8524458",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "03101957bdf5d7180f07b45a3aa4ebd79744ff15fcdbf70a1d4b827df0807260",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "03a184a71fa90512a6a11217c2148fb24cd4adb3801023c8027bdb1d2d446091",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "041d19732cea5bcf20236627016b67118ac09aedf27c0e7b8d8ecf149666dbbe",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "047cb11217853710ced24d2856c74725fbe32cee86424663e5a7233b67fee977",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "04d047beb07dc23ca8d2d456abb63bc6abc9bd87360bdfb5b837553d830c3d54",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "07139d24fca444e5f5336c002dc546167c62afc06d83cecdb4975b0fa7512c58",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "072d957754e7308bb99503f9e069937bab4d206f6afe03fd920d50440abf1187",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "075cdd76067302296a963f8a6dc11c1912654db6feca9589022a50a2bdf040f5",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0820803700c46d6ff7047cf857853759c376a4d295a02cedd4250259c4b47370",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0b32afdae7a20d48c038a12988b35371daf9371b06f97a9501c8a01320b72609",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0b8e04f828960cd00c35fd8ff89e7d218a6d5a28d5114cb5ba74d9ac06653776",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0c0ed3cf35afd1aaee8c33070c820bf653d66ed3aef63ca6de3fc4f70603711b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0d315fbd047e666619e3410a4b81e7653938ba30b9b609cbb9a99d2e5dddb60f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0d57f5c06cd9ec1899a3f9ea82215ec21ca9551d0b2d066cdd260d6259123a34",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0e00c3645e32f165d9440d31eb254c4542fe46a26b071f62a96b1f1497169a7e",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "0e184857ba11f252e4a12af10fb589bc3da9aee8c34a73e45ebae155e2a3fc36",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "0e7194cdad87e45e9b7bcb3aabbd2134df2b397f33388f80ab5a70254aba38d3",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "0e9c1cebf831641ec6aeaab1c0ef5cfada3449b250bcea21f6a1908e27427ffb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "10393809f84bb0b989578ac6125e64537e4b7619de0027ffbffce08a8dd71c4d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1044717a21b7f08e5f2c1fbc5f6117e683c9e080ddda36a4bf4209ef632e45be",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "10665b0ab744a51e042037f8ed7d302feef0051ac4504cee5591e62216625ba1",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1218316edc7fbdbeda2e2286dcddc2a870b871c6d6d1161fb2ed1f1eb72913a0",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "139ef01d893c0859e0ada5313414aaaad444a767a9fe49ccf3aa416ba0145e7e",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "148e5ce2d48357601b496418eb3a0e6b57424151519b481d4fbb7a911c11ae85",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "14a9e68f3eb7aaae79d314827793660663cd33defd97c53bb03c0c9c64584f9c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "14e6a9fb05852633be1e1c4e094c9de476481d7aa9282387772be261e68a09c3",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "16c78da3417d462c36cd2f7d9d2aa9eb94539bd5b9a5d84e0e4e61dca0185438",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "16ed726978bddc984fee8f68d5a378eda6acdba59d197a2f5ec64013154a3d15",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "184d512802d49f2b05173fd62c96a072434a3ffba3c938ff2b432e8bd6839663",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1864a1e26f8b783b78669e626335d8f3d3e54206e8b8480efae51138ac6d15ec",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "191451ced5f14dd0ce69d56bd1c80351ddaaf1e441d7e5693c779b585d79132d",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "19153af376f07e95f2bea7bd3733317bb4dbc2e2c7d2013dc9416019085da114",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "1945b0e8490994cadcc0b0c2e152f1d0aad92dd43c81748b46f8580660ce3ef0",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "19e3658fe60717c643afda5ccb489ed51c6789a355454cba84bfa4ce7bbd740e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1c3398eb1c706cac1b01aeb6d0d7de5b79f4898e5046c109bc6032a4be7a84aa",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1d6bb45b953e50e0a06bf6d0134055adbb7e698e051634b63c7cb1bf8c67f59d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "1ec21dfaa3ae41a254e40e6ae20d4545e6e7ec14a038f3913d976bdd143163bb",
+    "bank_name": "Ameriabank",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "209808b6f81952010479a10e29006cd8cfd7e22ba8097aff930defbc7bbaa6bb",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "22c3803fef270b514a074fb6e5a33b08f38124a64610a1d707f26b35042dc689",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "235bd442b269b272c45b48856a72dd46d679fb53479d287a54b0ca3c388e71f6",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2408f994dea64fe35677d9a95539d2400aea3c99caff0bd15a7939ae3aa50283",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "258c52ea9a966463adc99f8831cc86444e27d422d5fd39c3459b352aef70e253",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "25a065d0c37aafe0cab9b7b93c1dfdef39203f0bb369ddd8d2ea13e66226a225",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "25dc9cbe2eb2bdce531f05520f9d40acd897147bcc9cbeceaf084ac386aec325",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "27058fef78a41853810971164bb30058d27d256d5b8650a32cb4374822c0a2be",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2799c169ae58d8cea4e800b11c1ec3c44c780f5e6fd1b94432db028f0d9123b6",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "282289fa2759b093b69f093abc1755e7db4dccaf9d884c6dcfe6032cebcd9411",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "28869b5626eb4a28424c0cc2b45d14c4cd9d3a3f13efbfd7bdcf150055dc75ab",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "290d275c901b69bfb83aa3772702ed3c40247722bf4e6977afdbe3bba8a94a8f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2a08e32e52cc71d86c53274bc07f34f35ddb23c639dce4f38742edd7c7660cda",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2a30f82851521279c441df1f8dff6bd7d84bf3cb5976dd2645568c2ae4a6a9da",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2a8039913ad30ff5eff9baf51a390ebc6c034c1b98c51143d605052f5549af9e",
+    "bank_name": "Inecobank",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "2b2753f1bd50c91255881e5e171faf381868e9574a6f4f945b9490b39f446dee",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2b58a556e08bb5e77751a315c72cafd9e54d0ba9aaacf243f606e35a1fdcd223",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2c0a0bfb93b185b34040f4e036ed74473b56ce47d06e0054b060e46b028c2d3c",
+    "bank_name": "Ameriabank",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "2c2761bf48468f9e740eaefa9f7f5e7f18324f0191471655ab47dba2d657618e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2cdbd8c4b8cb18de092e529fd938a9ae1e902b8b4be31d41dc07a989a2482aea",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2d3e04012b724da8369d7e37f11daedb65dd9b3f1a464a97dd8a4126ffe6fa7b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2e817366900174709ee86dd6b41654197c8d4b6be249944495f52c2bbbc69ea4",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "2fd14a2705e747d09b3f08a1179cd184c8d3dc00d8478f340ed023b37632c6af",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "3044f4d0f0b7e9e74c67ff9fb26f1982d7bef6c7a9d117c314656983a02e1e6a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "304ebe250a3091db881c559b21c1feea5b5f811fdf9cae409ec597ac58022fd3",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "3066a705d3598b0e101f5c33f0d8a7afb62c70d249c7ed5e0fa7f82a90e3bc33",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "30df3e25e433f1f70c0fefe6e2b8a837e2a5753dfaf8029bf9491623221f3f59",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "30fbacfb72e15d43138af4f49d9ed5a6b02c6cacafec2b4ea5645ab67201e672",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "349c1544042ea852751f27bb5a8d04ce74c54d855f62507e0dc42bf3537c7d4b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "34b6671ff0a2e5e095b9cd46e1a6156e498a1218ab78c823fb6252c6c7485b1b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "34def45af7bb835fc8c432d9154d55679925d89987b24e726ab337327741f75a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "352f2312dab28792d459fd91c7077b9d2beb2c8d1fc2261896bfe097384bc3f4",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "364e3a1755be11432e24d241b164f0d04f2ad192bacfcefa8c57c7e9674396b1",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "364fd323abba215c43efc0453350e8aa88f674ab0f33e1688fd64e1fc6f2d502",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "36e41375860824ad666c5844abaf13b4dd0636dd722dc2f709de6119f6281d7a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "37a0fcbd2d2251e0477c2bfea3cd5c1c8c56b5acd0bb818ab9eae5d478a23b33",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "38c49af876b4de784989e41de16e7783178d4b5ed612aeee9a1b87f8c81f7234",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "3e19138863f7fdd82cc3b5fbb02105c92cb6517fe5ed07cc48657312b96d8fa5",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "3eeb3545a2a98a14c0194857d72c87d882d03b1a9413b171162affbd927eff45",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "3ef245e19c29b198c4cc4b013a80d35bf944bd6cf5d09006b879d85e62218176",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "3f70eee9b14b1ca826c011390a535eb714cf5288abacb4e98706bb18f1137465",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "409e9846995c55f57c5b964f4c6e388c99b3e5660bb08f05be9fa1d2c4b416d0",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "40d75506bc2c266c0de8b10acc4a8fef1485da92e533286ccdbd59eee99c0216",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "430db3b21db44821ff3ce83e66b6f1ee38110f6596464093c691ce6b3fc9db10",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4348eed84e4829f22ad5ad625b0241cae0b7a95e75081ef163d864a1270e82a0",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "453e216456c80a7476465c1ad725f9da7f2acb1ca0fd323fe4c5adcf5fd92859",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "456e3921274a241a8555b64aacf7dbf7af02a8998b79c6ae0fb25079570e7a7b",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "457172b7c39d9e808e387d6071069009eda06a39e5f045b2ac5f4a5f333e8ac3",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "45d0108488fc641e3df2793fa260f463b7a76814f276a33790b6781f058e9b71",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "48b4970a8cb3a146b2847688a77d2c43fd4fe74e6b92fa8706cf3bfe24c2e105",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "48beeea4d176d0105330e33194d2863f77c6f036254930abaf6a34e31f2275cb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "496b7884277aecc9846dafaa3fc189cbf0fa4d182f3953c25995c21dd610214c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "49bd751b918d18f06dd81131a75189e49294d1b2dca1a276ed1481f54afb9ecd",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4bbbd3b990a61fbd0cc66bfc461039c3d697119501c004066b53fa7a80c741d6",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "4bff1d26d92f2d8d2c6e3c3c44c4a0dfdab91e8d967d8faf1b0021d2725e1860",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4c61317af3442d9926a892872b1695c65e5456b64f787fb7d70b5635c89f1667",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4d06574a9c70fce4fc3213693d59141e78344ad420fe16824b9f020347e8156e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4f84c5788f2dbfc0b18d9b89a1fa40bcca99fa3c748b2b877db483d17bd24569",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4f928ee7852ff2dee906c618106ffae7da2a72307d626f24b6a393a481d3d959",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "4f9f0bed03660910b4bec408ba6f122ffd6918bba1ff8448bc41577a9833d673",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "51ee8f760164f2b8e2ae6eacf0c845dd1aa33ca80455be95286697ba430ce143",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "522cad47f01584024b0fdfa724351933488ab0e20b63eaa15c1cf63ff9c39821",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "52cb8c368753392252e3f93353ae74b09f0a3c83249da9952f1e87fb4f960bfb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "53137b4d04cf01540b87e456c35d54ea3eda44d5f00166c11d489c2a96bfb13e",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "544d27265f0fe41a87e50c743ec4da0be9423dd8a1233aaff3bb58c6749e0793",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "58a24ce83e10592a36f391871a40409ade3651ff10347fd59e60f597140d8f5a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "58e80266e275a750402627d97c2906701f9e251eb7027abe362aaaeb0bbe801b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "59b5e832b3853e83a9f012016b073b8684ddfbdcb12ec4247f5db3e3589ed731",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "59ba71ef42fde0ccb34351f8a4ba31831e73c4c99c244440850810fb82c67310",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "5e09ffc5e1af7157c4707d622b508cb3397119d072cc6ffd51dc3c8eeb815c5e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "5e72280a321422bb0e8fe22abafe69314fc745695eb8139ac8293e86a2be3de3",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "5e91d843a99da55c584a91f9bb0ed84c482bbf929a1e46c1dae6f1e4e3c1e963",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "602b491f0aaec2659ea247d98e6626105b5470d49afcb6c5eca3c1ead8d46aad",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "609a3e8da76ffaeb40ab0201d01e0b6c78d46d97af48d15493d0f5588c2a7d47",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6288819e2f09565de019edb990ad04e9a5eca3c5831cf932462eee2d97ea77c2",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "640bc7624d56935d469dda756a5a491502a70dd81166f1807e08b03ed25ea889",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "64e79779f50826423e0818742050890fd83fed553644d8f6032f340655eb076b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "65f758c6b5282421efb43748c1f900d2366e6fb109953711cdefb56e24d179b2",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "65fceb9ec1faaab53bb3a674375dbf57ba23c7132dfb332a98ab28d480fa7f80",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "66a3907349140243a4095d1e6eac853e39c5b7243988cf8f251a2524d4c8cac0",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "67e82a7a5114f2aebf104f24468599f787be81405c36f1d8c336974e4e9b65bf",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6812964b452d4803bc295dcb9a13ce9ee657110ecdb0180904487bd95bdfa9c5",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "68a875cc9ed7e07c08a01bc37a0d243b2c9743d6b899e62e63a25e9f0c6e3b9d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "68c08c6b4ac940cbc5ca269a3f08416a569de717599b286c4a9b3973056fd077",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6b253568ec31c219ba70ba6ad7c94ae11911d15e5c7ed7428535ec642fdf5d07",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6cb652bb3885594eb0128ac7b85ad3d46743e770b5c460ba25192286085ce4bf",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6dc6625eba2caee31f763bc2f0333d5158eacb0d1a887b44fb6d24a5c577c0ca",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "6f130dee7a3bb880342098c709b6096ef8464402f481d523b4e9e77a8637b0c0",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "705956d3fb942d7c0065808a8516ef3d7f2c00dc57dfe2a98d5efb832c83bbed",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "708aec0795d41041aecbcbaa2656b37358fbfa21b4a3593380801b2b3f53dfcb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "70aa66e818ec161ab5e35ce8320945525730e9fbacd463e279ce5520b7302376",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "717f6fd18340b15091c345f4b859a4d86240a9a9b4a07a2253f0c613cd09d32d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "736fcab651bccaffb74c00492f482350a0909e6e304f85e17928687da4aa7f5b",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "74118e7f0b14ac0b7646c4521f2fb0e2fcdef137c393537f8589661ddf4005b0",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "755bc0ca27460a147cfe8c04f705c5bc39b88e02af0702910b3e7e6d17d7c0bc",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "758fa21a3ec4254bcbd74a3b6a0a46bf7d231520b3f51dfc446b968221a86be8",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "779942e5aaae15f96be55870a950e2086827578eff29f24810ea86633d2e1999",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "7950b4e8cd2fa3adf5fd8d0ccffdc639abec8078e90ef08ed4235fb2b353c4e7",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "79ad032bba4a467b943d81460c5374241236d31226359c129914cce8a97bc948",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "79fac6295a1d0f7f816d851a1efe355066b202abe3d456eb4d4cd22c90074054",
+    "bank_name": "Inecobank",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "7a7c0720970102595ef0310c7a6bef1b9aa93063f746335eac6f332f43cafe42",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "7e7d33b54220054bc99196197755761892bf756ae8fcebe1656b47a97e039528",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "7ea3c428a1c518890adad788ee43b98a54b784d9fc2baf1e83dd5167f3cd67b1",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "7f0952d890e02c6ce1343ce5bb89a3e7bdda1cde4ccd4bb842963eee2a62123e",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "7f2c7d3d30361d0150d55d7012ed792786cfb96427437476155ca5dbef5d750a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "7fd848abc7b7cb86de9928e40d4df82567cb41531f09311d87ef407511849c2a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "80d74a0a7effc5cdc297f4f08494dcd69c4462a57bafdbcb8f71b95c06655fcb",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "8160af2a3cbd5c19157cb7ffa9326c6d9310551d46c65be962d745888441fdea",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "81baae5f30089bd9109dc5e53d8e975f62f0f120734a0b79a76d456b5d93c218",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "81c1575716c9ff403b7833deb315711efd2d1bd661d22a43d22217eadb19cecc",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "81e8bb4fa4b954ba0352f69620fce8a4c08d85ea5c15914622641921c6e2cb26",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "82283371e3d489c9a729571908d0a38a72040f1332853149c9180ce1ad193406",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "85c51833ae8569704f44a4807da96a88693e712ca2a299396d6c7ee9f56eedb7",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "86b27062c4ffe91f832ab108bf6e3805b90eb50282a162f156a3e46d64e4b286",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "876af0cc741f0fb80ba0eaad60a431459def673a9fd665169dae21786ee15281",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "87941870b01f526566d2e6c6fc767ba35b3f666712b03bc170d63b8eb4089874",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "892ad300587711887cbd947e0a759bbda637f7c0f41be565876ee24efc670198",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "895b47347ad59544f65af881e96c186ba7646f7400f1f5945c32f624f97a1967",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "89f86551734a8d05bc0a6865b612f333efc414e60504e96c36be5338219f0e63",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "8a010db2da96ab3d4cf0a926755a636273bb034db6187db1bf9ab76d355fe618",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "8a8b63f27cbdbbe457bc99123ddbf5253064457280d8654c892acf16cf58d1a2",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "8b85e580d0b788f843b0b085d398f235792c2a2a76b8f271767a488de2475ebd",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "8b894039c2ee4e8884f7b40af0fe5c7ccf53510e68db2f3a79fe2c3f4378cd2e",
+    "bank_name": "Inecobank",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "8be4b1495fbe58d417bda35f04033d6be95b27b4abc344c9b05ba91ebb082770",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "8cdb58e8698438c64d65f23298701a008b407d591141b6858a56fe3c1a1b09eb",
+    "bank_name": "Inecobank",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "8db8877ed270f07c01e882e97dbe73b367558f554161e72216808719888e0c13",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "8f7a27c565d2006ae134901eedd55f0b1f601c8f8bc63a97711a95a0931d8490",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "9052ea98c4592b8fe724ca709594a66bc66bd1fd84423695cd46f491b2446b1c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "9129d2f302e5a0dcc8efa27c207de309ea41d936d9cde024b208bec8a45b1380",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "913ca5d57279525e5ec0d2a2d267dc331d9ba3c7cd0c7eabd6722fc0491c0c2f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "91d3985897a0c5a3d22879c248002c290a843121240d09e913f1457d994db56e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "91de3737f7c545edecba5cebec2dfe5ae10c16c63fa8803b800bdc7e9a2eb205",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "939eaa24cc3a48d67df2ba06105de570185781ee2fccd2701f98ff6771767250",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "94839f023b873617106901a59f2839477b2e887e5f48144d212c6db46cc125be",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "95157a48760221f245666d85046caa591cf2d38b9d95b959987aa4a36a3bab88",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "953f2b84b5c33795dc2d3196ed5931d34e1076108bb87b29089f9ed3cc2d456b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "96de1d2a3c4a95f3e2f5e75fc7cc178f470ccf137caec8abc714553364278f29",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "98fd62bc9f95325832677fcfbecbc3c344ebe2624ebfe518aaabdfa4eb30d1ce",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "9919a5997bca848acbab0cf82bc5b858ca4d5d4c285294ade3050b8105073b01",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "9b156b3913d6838cdaa1090e64f324c2be96ba2df508c2df5cc9d067f88a53f4",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "9b6945228ffba11b076a0ffc90994d1a564d663b9807a686309a1826d9f0d66d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "9c23435ece07d2cb4166fc863560102c2c2a6e0bd1bb11f708593ce46387a128",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a048f81714698ad875e5ac2802bc8f97cb7e806dcd23097d4cf5c9867dc7e15d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a0e5abb810b4fc8e9e87604813e8fdc52d7b1db46f923a864b3ce053852a9b5b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a2580ce51cb72e482076b4ef8c6d0c893cf780c97aabb966760f080f66b7e0ac",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "a4dbf4d07a1df9ce2167007d81b8d29f8f4b434012ba316ba569ac3974ab304b",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a5a9f7208a01d6c342c36924f27fd220423b8d38bae2580efe8bc902401741a3",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a63b5b40cd68dfaecea04c4314fc8101ca34a84f73592aae079544542d00ffb4",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a65a459d46625a1859dcf3d9132a7cdd8f7304f8c5565a67a5567240c07cd4f8",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a6bd2fa2486fa51b6e0be35723e32860c465f313ae8c07a3e3bb11088241666d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "a8a5037f32d9534ccff12792a57a301be28d6c8690f61bf968f02216e7b512cc",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "ac1a654f0d0b18a7e7a5051c3d34f484474067558fd9923b0b76dda12dcc5b4e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ac205579b8e58a6de6c48f16435792cfb08e70cf7c8f19b2aadca11ad6ac597c",
+    "bank_name": "Ameriabank",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ac6dd993a8093dcdac82e4337f90e8b2390fbc31d757f1802483d4d4043fe605",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "acadac6ba52ac124c64a26dccef31a9d7f11c8a277677b13e71aef652847d83f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "adb14eef10be1e1c51e511d90eb4ad9635b7d80ff852860b723befbbb69e7605",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ae85085eb031f67f352af77193fc945753cce08c04fdd488c97681c75d6bb791",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "aeb6ac1e6ecd66478baa0353331c71851083751c4ae24f779e6dabc2f87a04ab",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "af342a709d0e9bd567cb51387027c2102b93f397c4c42219c50ec2820fda147f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "afe9c37afad175ecbf2357e10b87f62fae297d9a470934abd3b8d018e238c903",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b10626d4d92a5a2199d2e8ee8d0d2d1f87dc2a9b4560308707389d917b499f46",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b10c255443a412cfa6e180eb3367ed975d116c0e6b331ed6fc3a4245b1737e2f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b3e7a06e8158c6c0f555c0b8cbf71d8b33282fad33242d21a35afecbae5717de",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "b6c09efa09fc6f93e600c85a9890d835044b109c654b71c5d839131861cee7f4",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b777c1b32a9b985ae5c67efef96726c2b34fa779bf3d526d9234d8e1373d9272",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b81763a400ca4fa8e2a82dd4e90f7b9a18f6ff6d916cfdfb8fa57bd3d79e5787",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b92ca4f1c46cad725a5253ce6ec45dd34219dcabb1ff2893ffe3293c443f6976",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "b9785637145e58c29631f0db583b23ff55a1427c71f459b2e35ca469e289d8d5",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "b9c55f07f69223440fb12e953c1438c29ada43db86bbadc5d0cb03bf32895b7f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ba5460535ddb3f509d3b26237d11090209ee05f2aabeea4ff54393fe4db2381c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "bd047a61071bfe25b376767a7a6b85ba0c845ccb7fea3d4f742739d8a7f05e57",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "be2e1861e8cd37e2f0930f95b988b6a652fce39d787a1454df62aaf57fba4ea6",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "be41c6841fbaeefdabddd2b30a66dc2479efd1ef501b5fb9255d0fd26e861689",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "be4e073a375f3c8da47199a3d814e87333cedd7ecf052b9d87606ac27093b6e8",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "be5c5ccb6ba464ed9f4d0c40fe431f85cdcd31e3d653055585bd61d168c1e451",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "bf915c3e209ecbc910827dfe35fc1749ee29a48ae83ef81e9417a426d1370ab2",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "bff9cd7f347369e92d3ebd3f0edbf88393dd14e70bc1dfb3be26cabed51e60a7",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "c17ed46b739c7d238a4c37ccc32efd5ac330391f09a99c19ab033a5cd8b2d228",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c24a13c54564d9a6c8fde3c0f407122dfb4b25b6b44defe17e919a9461b3cd3e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c26aa16a0b071f2dfb8cfbbdea80c6c21cc8ffe32baf08d291da72185cc3db58",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c582a036a2e2c13deaf56f0c31b78c34e3a5ae9f890c6f02c699169ddb7f3442",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c5b3918b3a0d7920864cf83e33b257422273150418747df72e01b64b567ab08d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c5ca5ac956ae96fd926763f309dd3dad6f24b5ae33c700b256d284dd9e6d3c92",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c5d3d950b9f2e83c8637a438a83b84451a5d93a79786e1570caf037fc78d54df",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c5eed8a512f36e00dc2a23fb56d6450e5225338de079bf6548e377f2a55afbd8",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c7708df71bf168c689de35795a4184a0d0c6d178d25bbce3e0a02319402c8831",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "c785b4be22dc134cfdbd0ee1900852ada636c59c1257b03820b6b840d1c6dcc9",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "c87cc3120c75ee8c2e91c33be3a036edc6a4449aa12edd2443ac01878aba9f37",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "c9cb500537e8415942b45f41c293414c40bfd81b00eaef2e78e7d0328cd26e66",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ca9f6de60358dafd5b15369d2c2f1669a22bf98e727a1fa3dc50b4db20da1b12",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cae3c1d2a5c35baf0f7345aba77db0c726f373eb5a060ec1ad467a18b087c23e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cb4fca0823b08b7bb0024d8da338f435fb026d5a8cbfdba27ca8665bda9059ad",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cb85e8b5c447faba45ad91bc6e75d9c460b0765413b10ee5bf50af99ee6c2fdc",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cc3f83c215a8e040d6a3603b509e5c6ce798c4a4217ba368d7a097c2c14df626",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "cd7d27bab66492e093d79406ce4a09f0f45eab33229d5cdfcf2e5cb62173bfdb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ce129b17497c8b660025350468e20e4ea77a58b7a08267653befa5fee62d357b",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "ce817fa4b1c0da3ca544bff3786dc13b2a443e90977e8034813f1f0f8fc9c772",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cea7e8673df1146a86d7420c004d13565ff6da9548698c07eacb08cb62e727ee",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cee3528a65427be54515279eb5a24dad53b0e0ef9df0986baa9e74fcbcdb1d87",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "cf3f8ee11736f8d3f120e3f7c468cda8e5f9aa620c01c1fd20f05233db58e5cd",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d0f81418eb298a8b8d274c0c90e595eb2415ce220ed4d0e0ae700a4c022528b8",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "d0fd50db1927c67b017c6d3b0dea0631ff7a5ab429effde763cd1a75ede02259",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d17be97ee85e8cda1a1188f718d035dceabb83abe6322484a9520d155fb38291",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d186694ad06427293437d831ef82fb01476788e3053f4281c2988b99a7c3ad8e",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d597cbc9fca6c8285ab62821672cd9af2dba13001f3c5d1e8f4a1f8795b19489",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "d7c4cc52cd196e34741ccf237979c001c42263d5817b68b6bd69376584004e8a",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "d7cc5ce03ab6e56268a6a7b176ee37d874c62d5f85cf58279a5b475a49720796",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d908562ec7bc01026b5353241e03daa1c2b113c73b1f1aa1eca87e2f2b78b03a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d94f9f08cba6d9d834a5166917e93217cb360c47bdd595cbe830fd30de4b8b37",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "d9ae8294da62bb76f03b2ed9344ad6a0ff361bd68cde1f0dc2fa2fb13150d24f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "dab6ce5f6c6d485eb59f49c08b7d5b5f2722cb5e59db7bda29b90ec6d95c2a85",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "dafa8816767911f457d1d723c3797c52d55af31d043a9e219e1e4eba23a3d29c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "dc8231b9c2aa24e96446d0c4252f3ba4e8ce3ca4059b14a1256b7e148436fb78",
+    "bank_name": "Ameriabank",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "dca364f4c74b43236bb7f9cf2ad028a8be11c4f2b688af471a766996c59a4735",
+    "bank_name": "Inecobank",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ded24fc0872001c2bab954d70ddd80cc9e66d5827151759731898a1ee22da264",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e2069279565c177ffc950b23751483bdf2c15a641ac5b91aa421e1c23c9019b9",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e37b68a98573f70652d29864b126d50cb1ab8098c8009a39293c9dc961f10192",
+    "bank_name": "Acba",
+    "topic": "branch_locations"
+  },
+  {
+    "chunk_id": "e38243dcd4bfbb56e16caf19ebcfb803dc9de04ca86c8673806be9250c65052f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e3a19671a62f9b8a151db9188b5b2bda8badba8937ef34a7b37432c18af53f94",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e531588dc3eea6490f0f9b93fa79cfafcf714ef665ce1abe39350f6d3b2d6deb",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e745e355220cadf088884c473eb49eee62669d734372773c2b9649726d9cb87a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e85b34313bfef48fd1a5ba3f4682e61098e8803ae517182125b36d0aa4675b10",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e8893f6b349d6a6d08e5efda83f524c3c665c1384f883958a27feeaa109bb064",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e8bfe2a7ccd8bed0710e0e805386363e7136c4a28ca20918ea96b28d1608041d",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "e8f8a38e737eb2e2ebf751a014b68cbf97d9aeb3240c61ecef5d3e4133e0ca54",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "eb03edef8042d5132e5e373c961ab199040c4dd82175cf7763f82416fc01a2f9",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "eba7cfa20b89a9ad8a707b966c1388c70646cba394ea73e434ce023b22b7581a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ec0abd70ef51c0ad54671e26b85ef19e286513811fb495275938feb58dc36335",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ec1871e8845daec550ce3ff7e61d0c7249005c55db29019310c59c0b9b9d5826",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ecebb895f6d5813773064ca03be19bc1b45d317d63eb5c0e01014e32447189db",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ee1dced2865b497fe64535c3900c225c6fd5e9c5622272a4b2561b7b88fce3c9",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "eff30fbc8b0e1bb710120afde9b41d76d01f6722724109988e1aa781e5e13b64",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f005ba3aa761b64d55e8af783d6ee1e26a24539c155a8d2054dc07d993a1380f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f05305f800891f84e88cfc810f60d29de6d83a367585f3fa77563f4f5bf4e4f6",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f12a42a0728da290b2f64a45af8e1c2ffffd66362fdd9b49d1b148d34a27da9c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f184b532a2b1a38501c3c5ac8725538ad844f400b1d965ba03e88d013f9e15c7",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f38d1e925e7448627f57d84e92f98eeebca6766db1ac85e752bd11cd3172622d",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "f4289ae40669ecf65d296394e37f639682f4ac35060c834c7d0b80583165ac0c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f46a9d4ec8543ee5aa795240e762e00cf301e6805044c0672a75c7e671847dda",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "f4d99ebbabde9845f3834dcaae35a017413b47c7ee0ab6be70050ef56b60b54f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f506b18a7a2f752d6c346872bea91bb02f96c5aa1db07bbac53c572df43213c1",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f6de2f2b3b4874ce2f6a4647a89d9ea8ee430fb483e52f5b517d54a6d7218282",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f76f02af7dad4dcc01218a1f4cdb2ee061841df3059501ba695416a757204dcd",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f902529a0c1c9249321cf3d0e378c4ca0638f109c815eb141c5ea44684c55bee",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "f9b7833924cf6e1c6b5c95ae7e7a56463b4b85132e37e01ecf2e11ef9586a7f9",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "fa9266a1f55aaa52f3f3b9842e27f1c100a9c0984efaf43c1ea9c434d394b456",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "fb959472eeaa0217e96bab74ab624b335c0f261d0b06de2ea2fa14e665314789",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "fc569c11277d8453c4f483f0360799f7a88c337412502d8419848333058bc11c",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "fcc994abbc745ecb32ae318c62f3dc81f94765c9b00f250fc385aac401410c32",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "fd744801fb61a607c2e2cdbdfe36b50cb01bf147be6d1e0ee91f9a590c3f7f2f",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "feaab5f737c6a0ea7f0602326ec5915898397197f857cdf07e900e14eeb53f84",
+    "bank_name": "Acba",
+    "topic": "deposits"
+  },
+  {
+    "chunk_id": "ff0507d4af5abcde926f3e1f4281a1f9aa0a9075f604179400e3224b7b503332",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ff13587d1111ae30da57c13fb2490ebc286d8c6d9c04027424aeae21abd33626",
+    "bank_name": "Acba",
+    "topic": "credits"
+  },
+  {
+    "chunk_id": "ff2aa9369c590e06150d8cc2a8f01a009d9a8a587824d0a3eeea2420d4595d9a",
+    "bank_name": "Acba",
+    "topic": "credits"
+  }
+]

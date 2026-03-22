@@ -1,0 +1,37 @@
+{
+  "bank_name": "Acba",
+  "topic": "credits",
+  "source_url": "https://www.acba.am/en/individuals/loans/mortgage/constructors/Adress",
+  "page_title": "\"ADDRES\" LLC",
+  "raw_text": "\"ADDRES\" LLC\nApartments from \"ADDRES\" LLC constructor\nTab: General terms\nConstructor\n“ADDRESS” LLC\nAddress\n17 David Anhaght str.,\nZeytun administrative district, Yerevan\nStatus\nConstructed\nNumber of floors\n14\nNumber of flats\n95\nExploitation date\ntill the end of 2023\nStatus of flats, subject to sale\nNot renovated\nFlat minimal sq.m.\n61,2\nsq.m.\nFlat maximal sq.m.\n125\nsq.m.\nPrice per sq.m. of flat\nfrom 475,000 AMD\nAvailability of garage\nyes\nPrice per sq.m. of garage\n300,000 AMD\nContact data\nTel.:\n+(374) 91 277 662\n+(374) 99 930 303\nEmail:\ninfo@addressconstruction.com\nWebsite\nhttps://addressconstruction.com/\nCTA links\nacba digital: https://www.acbadigital.am\nFill in the form: https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans\nCalculator: https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator\nLast updated: In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 25.05.2023 14:35",
+  "fetched_at": "2026-03-22T09:58:16+00:00",
+  "content_hash": "04dc18205e8464575cbea10aa2eabbf5f1f430696d946505e71c0151f9b1d32b",
+  "structured_data": {
+    "page_type": "acba_product_page",
+    "title": "\"ADDRES\" LLC",
+    "summary": "Apartments from \"ADDRES\" LLC constructor",
+    "business_card": [],
+    "tabs": [
+      {
+        "title": "General terms",
+        "content_html": "<table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" class=\"rich_text_table\">\n<tbody>\n<tr>\n<td class=\"green_with_red_border\">\n<p align=\"center\"><strong>Constructor</strong></p>\n</td>\n<td class=\"green_with_red_border\">\n<p align=\"center\"><strong>“ADDRESS” LLC</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"208\">\n<p align=\"center\"><strong>Address</strong></p>\n</td>\n<td width=\"208\">\n<p>17 David Anhaght str.,<strong> Zeytun administrative district, Yerevan</strong></p>\n</td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Status</strong></td>\n<td width=\"208\"> Constructed</td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Number of floors</strong></td>\n<td width=\"208\">14 </td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Number of flats</strong></td>\n<td width=\"208\">95 </td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Exploitation date</strong></td>\n<td width=\"208\">till the end of 2023</td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Status of flats, subject to sale </strong></td>\n<td width=\"208\">Not renovated</td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Flat minimal sq.m.</strong></td>\n<td width=\"208\"> 61,2 <strong>sq.m.</strong></td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Flat maximal sq.m.</strong></td>\n<td width=\"208\">125<strong>sq.m.</strong></td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Price per sq.m. of flat</strong></td>\n<td width=\"208\">from 475,000 AMD </td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Availability of garage</strong></td>\n<td width=\"208\">yes</td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Price per sq.m. of garage</strong></td>\n<td width=\"208\">300,000 AMD</td>\n</tr>\n<tr>\n<td colspan=\"2\" width=\"208\"><strong><strong>Contact data</strong></strong></td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Tel.:</strong></td>\n<td width=\"208\">\n<p>+(374) 91 277 662</p>\r\n+(374) 99 930 303 </td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Email:</strong></td>\n<td width=\"208\"> info@addressconstruction.com </td>\n</tr>\n<tr>\n<td width=\"208\"><strong>Website</strong></td>\n<td width=\"208\"> <a href=\"https://addressconstruction.com/\">https://addressconstruction.com/</a></td>\n</tr>\n</tbody>\n</table>\n<p><em><br/><br/></em></p>",
+        "content_text": "Constructor\n“ADDRESS” LLC\nAddress\n17 David Anhaght str.,\nZeytun administrative district, Yerevan\nStatus\nConstructed\nNumber of floors\n14\nNumber of flats\n95\nExploitation date\ntill the end of 2023\nStatus of flats, subject to sale\nNot renovated\nFlat minimal sq.m.\n61,2\nsq.m.\nFlat maximal sq.m.\n125\nsq.m.\nPrice per sq.m. of flat\nfrom 475,000 AMD\nAvailability of garage\nyes\nPrice per sq.m. of garage\n300,000 AMD\nContact data\nTel.:\n+(374) 91 277 662\n+(374) 99 930 303\nEmail:\ninfo@addressconstruction.com\nWebsite\nhttps://addressconstruction.com/"
+      }
+    ],
+    "cta_links": [
+      {
+        "label": "acba digital",
+        "href": "https://www.acbadigital.am"
+      },
+      {
+        "label": "Fill in the form",
+        "href": "https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans"
+      },
+      {
+        "label": "Calculator",
+        "href": "https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator"
+      }
+    ],
+    "last_update": "In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 25.05.2023 14:35"
+  }
+}

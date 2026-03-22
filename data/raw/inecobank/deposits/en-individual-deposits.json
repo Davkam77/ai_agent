@@ -1,0 +1,82 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "deposits",
+  "source_url": "https://www.inecobank.am/en/Individual/deposits",
+  "page_title": "Deposits | INECOBANK",
+  "raw_text": "Deposits | INECOBANK\nSection: Deposits\nProduct: Simple Deposit\nInvest in Inecobank's highly - profitable, fixed-rate \"Simple\" deposit. Make your dreams come true with us!\nTags: Longterm, Highest interest rate\nDetails URL: https://www.inecobank.am/en/Individual/deposits/simple\nApply URL: https://reg.inecobank.am/en\nImage URL: https://www.inecobank.am/image/dA/fdf3462a-a/Inecobank_Deposit_Simple.jpg\nProduct: Flexible Deposit\nIf you want to invest in a deposit, however, you are not sure when the invested funds will be needed, we are introducing the \"Flexible\" deposit. Invest in Inecobank's \"Flexible\" deposit and withdraw it anytime, at the same time preserving the high yield.\nTags: Withdraw\nDetails URL: https://www.inecobank.am/en/Individual/deposits/flexible\nImage URL: https://www.inecobank.am/image/dA/6bfff48a-0/Inecobank_Deposit_Flexible.jpg\nProduct: Accumulative deposit\nStart realizing your big and distant goals and dreams with small steps. Make an Accumulative deposit and start saving even with small amounts. Replenishing and getting interest on it is more flexible than ever.\nDetails URL: https://www.inecobank.am/en/Individual/deposits/accumulative\nImage URL: https://www.inecobank.am/image/dA/d9d14428-b/accumulative.png\nProduct: \"InecoSave\" Savings account\nWith \"InecoSave\" you can replenish and withdraw money from your savings account whenever you want, at the same time during withdrawal the accrued interest is preserved. It is easy to save with us!\nTags: Withdraw, Replenishable\nImage URL: https://www.inecobank.am/image/dA/febfe2be-8/Inecobank_InecoSave.png",
+  "fetched_at": "2026-03-22T09:58:20+00:00",
+  "content_hash": "0c2433c45dec7b42ace76d0040d3fc48ce2c78c5dd20c3b992dcf9382851e917",
+  "structured_data": {
+    "page_type": "inecobank_product_list_page",
+    "bank_name": "Inecobank",
+    "topic": "deposits",
+    "page_title": "Deposits | INECOBANK",
+    "sections": [
+      {
+        "section_title": "Deposits",
+        "products": [
+          {
+            "bank_name": "Inecobank",
+            "topic": "deposits",
+            "section_title": "Deposits",
+            "product_title": "Simple Deposit",
+            "description": "Invest in Inecobank's highly - profitable, fixed-rate \"Simple\" deposit. Make your dreams come true with us!",
+            "tags": [
+              "Longterm",
+              "Highest interest rate"
+            ],
+            "features": [],
+            "details_url": "https://www.inecobank.am/en/Individual/deposits/simple",
+            "apply_url": "https://reg.inecobank.am/en",
+            "image_url": "https://www.inecobank.am/image/dA/fdf3462a-a/Inecobank_Deposit_Simple.jpg",
+            "source_url": "https://www.inecobank.am/en/Individual/deposits"
+          },
+          {
+            "bank_name": "Inecobank",
+            "topic": "deposits",
+            "section_title": "Deposits",
+            "product_title": "Flexible Deposit",
+            "description": "If you want to invest in a deposit, however, you are not sure when the invested funds will be needed, we are introducing the \"Flexible\" deposit. Invest in Inecobank's \"Flexible\" deposit and withdraw it anytime, at the same time preserving the high yield.",
+            "tags": [
+              "Withdraw"
+            ],
+            "features": [],
+            "details_url": "https://www.inecobank.am/en/Individual/deposits/flexible",
+            "apply_url": "https://reg.inecobank.am/en",
+            "image_url": "https://www.inecobank.am/image/dA/6bfff48a-0/Inecobank_Deposit_Flexible.jpg",
+            "source_url": "https://www.inecobank.am/en/Individual/deposits"
+          },
+          {
+            "bank_name": "Inecobank",
+            "topic": "deposits",
+            "section_title": "Deposits",
+            "product_title": "Accumulative deposit",
+            "description": "Start realizing your big and distant goals and dreams with small steps. Make an Accumulative deposit and start saving even with small amounts. Replenishing and getting interest on it is more flexible than ever.",
+            "tags": [],
+            "features": [],
+            "details_url": "https://www.inecobank.am/en/Individual/deposits/accumulative",
+            "apply_url": "https://reg.inecobank.am/en",
+            "image_url": "https://www.inecobank.am/image/dA/d9d14428-b/accumulative.png",
+            "source_url": "https://www.inecobank.am/en/Individual/deposits"
+          },
+          {
+            "bank_name": "Inecobank",
+            "topic": "deposits",
+            "section_title": "Deposits",
+            "product_title": "\"InecoSave\" Savings account",
+            "description": "With \"InecoSave\" you can replenish and withdraw money from your savings account whenever you want, at the same time during withdrawal the accrued interest is preserved. It is easy to save with us!",
+            "tags": [
+              "Withdraw",
+              "Replenishable"
+            ],
+            "features": [],
+            "details_url": "",
+            "apply_url": "https://reg.inecobank.am/en",
+            "image_url": "https://www.inecobank.am/image/dA/febfe2be-8/Inecobank_InecoSave.png",
+            "source_url": "https://www.inecobank.am/en/Individual/deposits"
+          }
+        ]
+      }
+    ]
+  }
+}

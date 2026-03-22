@@ -1,0 +1,720 @@
+{
+  "bank_name": "Acba",
+  "topic": "branch_locations",
+  "source_url": "https://www.acba.am/en/about-bank/Branches-and-ATMs",
+  "page_title": "Branches",
+  "raw_text": "Branches\nRegions\nAll (0)\nYerevan (64)\nTavush (63)\nVayots Dzor (62)\nSyunik (61)\nShirak (60)\nKotayk (59)\nLori (58)\nGegharkunik (57)\nArmavir (56)\nArarat (55)\nAragatsotn (54)\nTo contact any branch of the Bank you can call\n010 31 88 88\n.\nThere are cash-in terminals in all branches of the Bank.\nThe terminals installed in the customer service halls of the bank branches operate from Monday-Wednesday from 09:30 to 18:00 and Thursday-Friday from 9:30 to 17:30.\nThe 24/7 cash terminals are located in the following branches:\n“Opera” branch\n“Sayat-Nova” branch\n“Teryan” branch\n“Kentron” branch\n“Tigran Mets” branch\n“Yeritasardakan” branch\n“Arabkir” branch\n“Komitas” branch\n“Davitashen” branch\n“Yerevan Mall” branch\n“Zeytun” branch\n“Malatia” branch\n“Kesaria” branch\n“Nor Nork” branch\n“Erebuni” branch\n“Shinararner” branch\n“Talin” branch\n“Aparan” branch\n“Ashtarak” branch\n“Kotayk” branch\n“Yeghvard” branch\n“Charentsavan” branch\n“Garni” branch\n“Lori” branch\n“Stepanavan” branch\n“Shirak” branch\n“Maralik” branch\n“Gyumri” branch\n“Tavush” branch\n“Noyemberyan” branch\n“Berd” branch\n“Gegharkunik” branch\n“Martuni” branch\n“Chambarak” branch\n“Vayots Dzor” branch\n“Syunik” branch\n“Sisian” branch\n“Meghri” branch\n“Vedi” branch\n“Masis” branch\n“Baghramyan” branch\n”Ararat” branch\n“Dilijan” branch\n“Alaverdi” branch\n\"Sebastia\" branch | Yerevan | region_id=64\nAddress: 80 Sebastia street N 50 building, Malatya-Sebastia district\nSchedule: Monday-Friday: 09:30-17:30\nSchedule: Cash register service: 09:30-16:30\n“Avan” branch | Yerevan | region_id=64\nAddress: M. Khudyakov street 210/2\n\"Ajapnyak\" branch | Yerevan | region_id=64\nAddress: 1/1, Fuchik street, area N 300\n\"Garni\" branch | v. Garni | region_id=59\nAddress: Alekyan street 28, 28/1\nSchedule: Cash register service: 09:30-16:30 | except 13:00–14:00.\n“Chambarak” branch | Chambarak, 127/2 G.Nzhdeh street | region_id=57\nAddress: Service office, 127/2 G. Nzhdehi street\n“Meghri” branch | Meghri, 1 Z.Andraniki street, Cinema building | region_id=61\nAddress: Z. Andraniki street 1, cinema building\n\"Arabkir\" Branch | Yerevan | region_id=64\nAddress: 64a Sundukyan Street, 2/1\n\"Armenia\" Branch | Yerevan | region_id=64\nAddress: 10 V. Sargsyan Street ,premise N 123, 124\n\"Davtashen\" Branch | Yerevan | region_id=64\nAddress: Davtashen I community, 42/2\n\"Yeritasardakan\" Branch | Yerevan | region_id=64\nAddress: Abovyan 36/49\n\"Yerevan mall\" Branch | Yerevan | region_id=64\nAddress: Arshakunyac 34/3 number 93\n\"Zeytun\" Branch | Yerevan | region_id=64\nAddress: 13/5 D. Anhaght Street\n\"Erebuni\" Branch | Yerevan | region_id=64\nAddress: 23, Erebuni Street, 74 premise\n\"Kentron\" Branch | Yerevan | region_id=64\nAddress: 82-84 Aram Street, 87 Area\n\"Kesaria\" Branch | Yerevan | region_id=64\nAddress: Malatia Sebastia, Sheram 93/3 and 93/5\n\"Komitas\" Branch | Yerevan | region_id=64\nAddress: 58, Komitas avenue 57 area\n\"Malatya\" Branch | Yerevan | region_id=64\nAddress: 55, 1/1 Raffi Street, Malatia-Sebastia\n\"Nor Nork\" Branch | Yerevan | region_id=64\nAddress: Gai avenue 16/46\n\"Shengavit\" Branch | Yerevan | region_id=64\nAddress: 16/2 Bagratunyats Street\n\"Shinararner\" Branch | Yerevan | region_id=64\nAddress: 15 Shinararner Street, 156 Area\n\"Sayat-Nova\" Branch | Yerevan | region_id=64\nAddress: 8, 21/1 Sayat-Nova street and 22 Abovyan street, 1/1\n\"Tigran Mets\" Branch | Yerevan | region_id=64\nAddress: 74 Tigran Mets avenu, 56-57 areas, Erebuni\n\"Teryan\" Branch | Yerevan | region_id=64\nAddress: 7 Sayat-Nova Street, 12 Area\n\"Opera\" Branch | Yerevan | region_id=64\nAddress: Mashtots 42, 17/1\n\"Armavir\" Branch | Armavir | region_id=56\nAddress: 16 Yerevanyan Street\n\"Baghramyan\" branch | Armavir region | region_id=56\nAddress: 10/1, Yerevanyan Street, Myasnikyan community\n\"Echmiadzin\" Branch | Echmiadzin | region_id=56\nAddress: 30 Mashtots Street\n\"Metsamor\" Branch | Metsamor | region_id=56\nAddress: 1-st District, 2 b. 1-6 store\n\"Ararat\" Branch | Artashat | region_id=55\nAddress: 31 Shahumyan Street\n\"Araks\" Branch | Ararat | region_id=55\nAddress: 45/1 Shahumyan Street\n\"Masis\" Branch | Masis | region_id=55\nAddress: 3 Central square\n\"Vedi\" Branch | Vedi | region_id=55\nAddress: 42/2 Araratyan Street\n\"Aragats\" Branch | Tsakhkahovit village | region_id=54\nAddress: Hoktemberyan street, 2/1\n\"Aragatsotn\" Branch | Ashtarak | region_id=54\nAddress: 1/1 N. Ashtarakeci Square\n\"Aparan\" Branch | Aparan | region_id=54\nAddress: 37 Baghramyan Street\n\"Ashtarak\" Branch | Ashtarak | region_id=54\nAddress: 1 Yerevanyan Street\n\"Talin\" Branch | Talin | region_id=54\nAddress: 4 Komitas Street\n\"Ani\" Branch | Gyumri | region_id=60\nAddress: Ani District, 7th Street, 5/2\n\"Ashotsk\" Branch | Ashotsk village | region_id=60\nAddress: 1st street, 9th building\n\"Artik\" Branch | Artik | region_id=60\nAddress: 28/1 Ankakhutyan Street\n\"Gyumri\" Branch | Gyumri | region_id=60\nAddress: 18a Shirakatsi Street\n\"Maralik\" Branch | Maralik | region_id=60\nAddress: 13 Freedom Square\n\"Shirak\" Branch | Gyumri | region_id=60\nAddress: 256 Abovyan str.\n\"Gegharquniq\" Branch | Gavar | region_id=57\nAddress: Boshnaghyan Street\n\"Martuni\" Branch | Martuni | region_id=57\nAddress: 52 Yerevanyan Street\n\"Sevan\" Branch | Sevan | region_id=57\nAddress: Nairyan street 153/33\n\"Vardenis\" Branch | Vardenis | region_id=57\nAddress: 5/1 Roman Street\n\"Alaverdi\" Branch | Alaverdi | region_id=58\nAddress: 59 Tumanyan Street\n\"Lori\" Branch | Vanadzor | region_id=58\nAddress: 22a Tigran Mets Street\n\"Spitak\" Branch | Spitak | region_id=58\nAddress: 3 S. Avetisyan\n\"Tashir\" Branch | Tashir | region_id=58\nAddress: Kirovi Street, area/district 5, N192\n\"Stepanavan\" Branch | Stepanavan | region_id=58\nAddress: 9 G. Nzhdeh Street\n\"Berd\" Branch | Berd | region_id=63\nAddress: 1/3 Levon Bek Street\n\"Dilijan\" Branch | Dilijan | region_id=63\nAddress: 37/2 Myasnikyan Street\n\"Noyemberyan\" Branch | Noyemberyan | region_id=63\nAddress: 2 Barekamutyan Street\n\"Tavush\" Branch | Ijevan | region_id=63\nAddress: 6/4 Valance Street\n\"Yeghvard\" Branch | Yeghvard | region_id=59\nAddress: 48 Charents Street\n\"Hrazdan\" Branch | Hrazdan | region_id=59\nAddress: 31/101, Central area\n\"Kotayk\" Branch | Abovyan | region_id=59\nAddress: 4/2 Hatis Street\n\"Goris\" Branch | Goris | region_id=61\nAddress: 2/5 Ankakhutyan Street\n\"Charentsavan\" Branch | Charentsavan | region_id=59\nAddress: 2/1-2/3 Khanjyan\n\"Syunik\" Branch | Kapan | region_id=61\nAddress: 4 Aram Manukyan Street\n\"Sisian\" Branch | Sisian | region_id=61\nAddress: 39d Sisakan Street\n\"Vayots Dzor\" Branch | Yeghegnadzor | region_id=62\nAddress: 2/5 P.Sevak street\n\"Vayq\" Branch | Vayq | region_id=62\nAddress: 98/3-4 Shahumyan",
+  "fetched_at": "2026-03-22T09:58:18+00:00",
+  "content_hash": "d780e5e670a6099e43b9cdce122c998dd370e10cd4c95ede1152a139fbe430f5",
+  "structured_data": {
+    "page_type": "acba_branches_page",
+    "page_title": "Branches",
+    "regions": [
+      {
+        "label": "All",
+        "region_id": "0"
+      },
+      {
+        "label": "Yerevan",
+        "region_id": "64"
+      },
+      {
+        "label": "Tavush",
+        "region_id": "63"
+      },
+      {
+        "label": "Vayots Dzor",
+        "region_id": "62"
+      },
+      {
+        "label": "Syunik",
+        "region_id": "61"
+      },
+      {
+        "label": "Shirak",
+        "region_id": "60"
+      },
+      {
+        "label": "Kotayk",
+        "region_id": "59"
+      },
+      {
+        "label": "Lori",
+        "region_id": "58"
+      },
+      {
+        "label": "Gegharkunik",
+        "region_id": "57"
+      },
+      {
+        "label": "Armavir",
+        "region_id": "56"
+      },
+      {
+        "label": "Ararat",
+        "region_id": "55"
+      },
+      {
+        "label": "Aragatsotn",
+        "region_id": "54"
+      }
+    ],
+    "branches": [
+      {
+        "branch_name": "\"Sebastia\" branch",
+        "city_or_place": "Yerevan",
+        "address": "80 Sebastia street N 50 building, Malatya-Sebastia district",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "“Avan” branch",
+        "city_or_place": "Yerevan",
+        "address": "M. Khudyakov street 210/2",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Ajapnyak\" branch",
+        "city_or_place": "Yerevan",
+        "address": "1/1, Fuchik street, area N 300",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Garni\" branch",
+        "city_or_place": "v. Garni",
+        "address": "Alekyan street 28, 28/1",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30 | except 13:00–14:00."
+        ],
+        "region_id": "59"
+      },
+      {
+        "branch_name": "“Chambarak” branch",
+        "city_or_place": "Chambarak, 127/2 G.Nzhdeh street",
+        "address": "Service office, 127/2 G. Nzhdehi street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "57"
+      },
+      {
+        "branch_name": "“Meghri” branch",
+        "city_or_place": "Meghri, 1 Z.Andraniki street, Cinema building",
+        "address": "Z. Andraniki street 1, cinema building",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30 | except 13:00–14:00."
+        ],
+        "region_id": "61"
+      },
+      {
+        "branch_name": "\"Arabkir\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "64a Sundukyan Street, 2/1",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Armenia\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "10 V. Sargsyan Street ,premise N 123, 124",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Davtashen\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Davtashen I community, 42/2",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Yeritasardakan\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Abovyan 36/49",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Yerevan mall\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Arshakunyac 34/3 number 93",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Zeytun\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "13/5 D. Anhaght Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Erebuni\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "23, Erebuni Street, 74 premise",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Kentron\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "82-84 Aram Street, 87 Area",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Kesaria\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Malatia Sebastia, Sheram 93/3 and 93/5",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Komitas\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "58, Komitas avenue 57 area",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Malatya\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "55, 1/1 Raffi Street, Malatia-Sebastia",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Nor Nork\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Gai avenue 16/46",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Shengavit\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "16/2 Bagratunyats Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Shinararner\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "15 Shinararner Street, 156 Area",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Sayat-Nova\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "8, 21/1 Sayat-Nova street and 22 Abovyan street, 1/1",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Tigran Mets\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "74 Tigran Mets avenu, 56-57 areas, Erebuni",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Teryan\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "7 Sayat-Nova Street, 12 Area",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Opera\" Branch",
+        "city_or_place": "Yerevan",
+        "address": "Mashtots 42, 17/1",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "64"
+      },
+      {
+        "branch_name": "\"Armavir\" Branch",
+        "city_or_place": "Armavir",
+        "address": "16 Yerevanyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "56"
+      },
+      {
+        "branch_name": "\"Baghramyan\" branch",
+        "city_or_place": "Armavir region",
+        "address": "10/1, Yerevanyan Street, Myasnikyan community",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "56"
+      },
+      {
+        "branch_name": "\"Echmiadzin\" Branch",
+        "city_or_place": "Echmiadzin",
+        "address": "30 Mashtots Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "56"
+      },
+      {
+        "branch_name": "\"Metsamor\" Branch",
+        "city_or_place": "Metsamor",
+        "address": "1-st District, 2 b. 1-6 store",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "56"
+      },
+      {
+        "branch_name": "\"Ararat\" Branch",
+        "city_or_place": "Artashat",
+        "address": "31 Shahumyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "55"
+      },
+      {
+        "branch_name": "\"Araks\" Branch",
+        "city_or_place": "Ararat",
+        "address": "45/1 Shahumyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "55"
+      },
+      {
+        "branch_name": "\"Masis\" Branch",
+        "city_or_place": "Masis",
+        "address": "3 Central square",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "55"
+      },
+      {
+        "branch_name": "\"Vedi\" Branch",
+        "city_or_place": "Vedi",
+        "address": "42/2 Araratyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "55"
+      },
+      {
+        "branch_name": "\"Aragats\" Branch",
+        "city_or_place": "Tsakhkahovit village",
+        "address": "Hoktemberyan street, 2/1",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30 | except 13:00–14:00."
+        ],
+        "region_id": "54"
+      },
+      {
+        "branch_name": "\"Aragatsotn\" Branch",
+        "city_or_place": "Ashtarak",
+        "address": "1/1 N. Ashtarakeci Square",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "54"
+      },
+      {
+        "branch_name": "\"Aparan\" Branch",
+        "city_or_place": "Aparan",
+        "address": "37 Baghramyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "54"
+      },
+      {
+        "branch_name": "\"Ashtarak\" Branch",
+        "city_or_place": "Ashtarak",
+        "address": "1 Yerevanyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "54"
+      },
+      {
+        "branch_name": "\"Talin\" Branch",
+        "city_or_place": "Talin",
+        "address": "4 Komitas Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "54"
+      },
+      {
+        "branch_name": "\"Ani\" Branch",
+        "city_or_place": "Gyumri",
+        "address": "Ani District, 7th Street, 5/2",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Ashotsk\" Branch",
+        "city_or_place": "Ashotsk village",
+        "address": "1st street, 9th building",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Artik\" Branch",
+        "city_or_place": "Artik",
+        "address": "28/1 Ankakhutyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Gyumri\" Branch",
+        "city_or_place": "Gyumri",
+        "address": "18a Shirakatsi Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Maralik\" Branch",
+        "city_or_place": "Maralik",
+        "address": "13 Freedom Square",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Shirak\" Branch",
+        "city_or_place": "Gyumri",
+        "address": "256 Abovyan str.",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "60"
+      },
+      {
+        "branch_name": "\"Gegharquniq\" Branch",
+        "city_or_place": "Gavar",
+        "address": "Boshnaghyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "57"
+      },
+      {
+        "branch_name": "\"Martuni\" Branch",
+        "city_or_place": "Martuni",
+        "address": "52 Yerevanyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "57"
+      },
+      {
+        "branch_name": "\"Sevan\" Branch",
+        "city_or_place": "Sevan",
+        "address": "Nairyan street 153/33",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "57"
+      },
+      {
+        "branch_name": "\"Vardenis\" Branch",
+        "city_or_place": "Vardenis",
+        "address": "5/1 Roman Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "57"
+      },
+      {
+        "branch_name": "\"Alaverdi\" Branch",
+        "city_or_place": "Alaverdi",
+        "address": "59 Tumanyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "58"
+      },
+      {
+        "branch_name": "\"Lori\" Branch",
+        "city_or_place": "Vanadzor",
+        "address": "22a Tigran Mets Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "58"
+      },
+      {
+        "branch_name": "\"Spitak\" Branch",
+        "city_or_place": "Spitak",
+        "address": "3 S. Avetisyan",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "58"
+      },
+      {
+        "branch_name": "\"Tashir\" Branch",
+        "city_or_place": "Tashir",
+        "address": "Kirovi Street, area/district 5, N192",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "58"
+      },
+      {
+        "branch_name": "\"Stepanavan\" Branch",
+        "city_or_place": "Stepanavan",
+        "address": "9 G. Nzhdeh Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "58"
+      },
+      {
+        "branch_name": "\"Berd\" Branch",
+        "city_or_place": "Berd",
+        "address": "1/3 Levon Bek Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "63"
+      },
+      {
+        "branch_name": "\"Dilijan\" Branch",
+        "city_or_place": "Dilijan",
+        "address": "37/2 Myasnikyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "63"
+      },
+      {
+        "branch_name": "\"Noyemberyan\" Branch",
+        "city_or_place": "Noyemberyan",
+        "address": "2 Barekamutyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "63"
+      },
+      {
+        "branch_name": "\"Tavush\" Branch",
+        "city_or_place": "Ijevan",
+        "address": "6/4 Valance Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "63"
+      },
+      {
+        "branch_name": "\"Yeghvard\" Branch",
+        "city_or_place": "Yeghvard",
+        "address": "48 Charents Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "59"
+      },
+      {
+        "branch_name": "\"Hrazdan\" Branch",
+        "city_or_place": "Hrazdan",
+        "address": "31/101, Central area",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "59"
+      },
+      {
+        "branch_name": "\"Kotayk\" Branch",
+        "city_or_place": "Abovyan",
+        "address": "4/2 Hatis Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "59"
+      },
+      {
+        "branch_name": "\"Goris\" Branch",
+        "city_or_place": "Goris",
+        "address": "2/5 Ankakhutyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "61"
+      },
+      {
+        "branch_name": "\"Charentsavan\" Branch",
+        "city_or_place": "Charentsavan",
+        "address": "2/1-2/3 Khanjyan",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "59"
+      },
+      {
+        "branch_name": "\"Syunik\" Branch",
+        "city_or_place": "Kapan",
+        "address": "4 Aram Manukyan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "61"
+      },
+      {
+        "branch_name": "\"Sisian\" Branch",
+        "city_or_place": "Sisian",
+        "address": "39d Sisakan Street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "61"
+      },
+      {
+        "branch_name": "\"Vayots Dzor\" Branch",
+        "city_or_place": "Yeghegnadzor",
+        "address": "2/5 P.Sevak street",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "62"
+      },
+      {
+        "branch_name": "\"Vayq\" Branch",
+        "city_or_place": "Vayq",
+        "address": "98/3-4 Shahumyan",
+        "schedule_lines": [
+          "Monday-Friday: 09:30-17:30",
+          "Cash register service: 09:30-16:30"
+        ],
+        "region_id": "62"
+      }
+    ],
+    "general_notes": [
+      "To contact any branch of the Bank you can call\n010 31 88 88\n.",
+      "There are cash-in terminals in all branches of the Bank.\nThe terminals installed in the customer service halls of the bank branches operate from Monday-Wednesday from 09:30 to 18:00 and Thursday-Friday from 9:30 to 17:30.\nThe 24/7 cash terminals are located in the following branches:",
+      "“Opera” branch\n“Sayat-Nova” branch\n“Teryan” branch\n“Kentron” branch\n“Tigran Mets” branch\n“Yeritasardakan” branch\n“Arabkir” branch\n“Komitas” branch\n“Davitashen” branch\n“Yerevan Mall” branch\n“Zeytun” branch\n“Malatia” branch\n“Kesaria” branch\n“Nor Nork” branch\n“Erebuni” branch\n“Shinararner” branch\n“Talin” branch\n“Aparan” branch\n“Ashtarak” branch\n“Kotayk” branch\n“Yeghvard” branch\n“Charentsavan” branch\n“Garni” branch\n“Lori” branch\n“Stepanavan” branch\n“Shirak” branch\n“Maralik” branch\n“Gyumri” branch\n“Tavush” branch\n“Noyemberyan” branch\n“Berd” branch\n“Gegharkunik” branch\n“Martuni” branch\n“Chambarak” branch\n“Vayots Dzor” branch\n“Syunik” branch\n“Sisian” branch\n“Meghri” branch\n“Vedi” branch\n“Masis” branch\n“Baghramyan” branch\n”Ararat” branch\n“Dilijan” branch\n“Alaverdi” branch"
+    ]
+  }
+}

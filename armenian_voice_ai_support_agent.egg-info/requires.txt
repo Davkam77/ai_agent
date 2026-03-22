@@ -1,0 +1,12 @@
+beautifulsoup4>=4.12
+cloudscraper>=1.2
+livekit>=1.1.2
+livekit-api>=1.1.0
+numpy>=1.26
+openai>=1.30
+python-dotenv>=1.0
+python-telegram-bot>=21.0
+requests>=2.32
+
+[dev]
+pytest>=8.0

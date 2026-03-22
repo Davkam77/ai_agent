@@ -1,0 +1,37 @@
+{
+  "bank_name": "Acba",
+  "topic": "credits",
+  "source_url": "https://www.acba.am/en/individuals/loans/mortgage/constructors/ericuk",
+  "page_title": "ERICUK",
+  "raw_text": "ERICUK\nNow it is your turn to move to a new apartment\nTab: Conditions\nCTA links\nacba digital: https://www.acbadigital.am\nFill in the form: https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans\nCalculator: https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator\nLast updated: In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 21.01.2026 16:39",
+  "fetched_at": "2026-03-22T09:58:11+00:00",
+  "content_hash": "a2c70e48e22f846cee9bf7085fef3db088bab4da8322da9ced4f570ba652871e",
+  "structured_data": {
+    "page_type": "acba_product_page",
+    "title": "ERICUK",
+    "summary": "Now it is your turn to move to a new apartment",
+    "business_card": [],
+    "tabs": [
+      {
+        "title": "Conditions",
+        "content_html": "",
+        "content_text": ""
+      }
+    ],
+    "cta_links": [
+      {
+        "label": "acba digital",
+        "href": "https://www.acbadigital.am"
+      },
+      {
+        "label": "Fill in the form",
+        "href": "https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans"
+      },
+      {
+        "label": "Calculator",
+        "href": "https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator"
+      }
+    ],
+    "last_update": "In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 21.01.2026 16:39"
+  }
+}

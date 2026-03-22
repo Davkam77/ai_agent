@@ -1,0 +1,31 @@
+{
+  "bank_name": "Acba",
+  "topic": "credits",
+  "source_url": "https://www.acba.am/en/individuals/loans/mortgage/constructors/tsaghkadzor-sports-complex",
+  "page_title": "Tsakhkadzor Sport Complex",
+  "raw_text": "Tsakhkadzor Sport Complex\nNow it is your turn to move to a new apartment\nCTA links\nacba digital: https://www.acbadigital.am\nFill in the form: https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans\nCalculator: https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator\nLast updated: In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 25.02.2026 15:16",
+  "fetched_at": "2026-03-22T09:58:11+00:00",
+  "content_hash": "0f02e649828215653640e5e321e1dd00caceb3fdc480f100031eae17bdc9859c",
+  "structured_data": {
+    "page_type": "acba_product_page",
+    "title": "Tsakhkadzor Sport Complex",
+    "summary": "Now it is your turn to move to a new apartment",
+    "business_card": [],
+    "tabs": [],
+    "cta_links": [
+      {
+        "label": "acba digital",
+        "href": "https://www.acbadigital.am"
+      },
+      {
+        "label": "Fill in the form",
+        "href": "https://www.acba.am/hy/online-applications/Credit-applications/purchase-loans"
+      },
+      {
+        "label": "Calculator",
+        "href": "https://www.acba.am/hy/calculators/Creditworthiness-calculator/mortgage-creditworthiness-calculator"
+      }
+    ],
+    "last_update": "In case of any discrepancies in the information contained in the Site, as well as inaccurate texts in a foreign language, please be guided by the Armenian version. 25.02.2026 15:16"
+  }
+}
