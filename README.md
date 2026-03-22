@@ -158,6 +158,21 @@ If a requested field is not present in retrieved official data, the answer says 
 - `pyproject.toml`
 - `.env.example`
 
+### Knowledge pipeline quality repairs (2026-03-23)
+
+This update adds production-focused KB quality fixes without replacing the existing architecture:
+
+- expanded Inecobank ingestion from list pages to detail pages (`app/scraping/sources.py`, `app/scraping/service.py`, `app/scraping/inecobank_extractor.py`)
+- preserved Acba tab/table semantics for retrieval instead of lossy flattening (`app/scraping/acba_extractor.py`)
+- cleaner now preserves short financial tokens (currency codes, %, short ranges, bracket qualifiers) and supports optional drop diagnostics (`app/cleaning/cleaner.py`, `app/cleaning/service.py`)
+- semantic chunking with section-aware blocks and contextual overlap (`app/ingestion/chunking.py`)
+- richer chunk/vector metadata (`document_id`, `section_name`, `chunk_index`) through models, SQLite, and vector index (`app/models.py`, `app/storage/db.py`, `app/storage/repositories.py`, `app/storage/vector_store.py`)
+- ingestion observability and self-healing for legacy metadata or missing vectors on unchanged hashes (`app/ingestion/service.py`)
+- retrieval upgraded to source-aware coherent selection with explicit multi-bank comparison handling (`app/retrieval/classifier.py`, `app/retrieval/service.py`)
+- LLM context now grouped by official source and section to reduce fractured synthesis (`app/llm/prompts.py`, `app/llm/service.py`)
+- KB behavior/tuning surfaced as settings and env knobs (`app/config/settings.py`, `app/bootstrap.py`)
+- regression coverage added for multi-bank detection and cross-bank retrieval behavior (`tests/test_classifier.py`, `tests/test_retrieval_service.py`)
+
 ### Why there was a problem
 
 - `run_bot` and `run_voice_agent` were separate long-running blocking entry points

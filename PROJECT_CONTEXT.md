@@ -1,6 +1,6 @@
 # Project Context
 
-Updated: `2026-03-22`
+Updated: `2026-03-23`
 
 This file records the current engineering state of the project after the runtime orchestration remediation. The main deliverable remains a LiveKit OSS end-to-end Armenian voice banking agent. Telegram remains a text-only demo and fallback surface.
 
@@ -85,6 +85,8 @@ Telegram text demo, local LiveKit test UI, or LiveKit OSS voice runtime
 - computes embeddings
 - writes metadata to SQLite
 - writes vectors to local numpy vector store
+- auto-rebuilds unchanged sources when legacy chunk metadata is detected
+- auto-rebuilds unchanged sources when active SQLite chunks are missing from vector index
 
 ### Retrieval
 
@@ -96,7 +98,9 @@ Telegram text demo, local LiveKit test UI, or LiveKit OSS voice runtime
 - builds a multilingual retrieval query
 - runs topic-scoped vector search
 - reranks candidates with hybrid semantic + lexical scoring
-- diversifies selected results across banks when the question is generic and no bank is specified
+- performs source-aware coherent selection (same source/section first, then adjacent context chunks)
+- supports multi-bank detection so explicit compare queries do not collapse to one bank filter
+- diversifies selected results across banks when the question is generic or references multiple banks
 - returns internal debug metadata only
 
 ### LLM layer
@@ -228,6 +232,29 @@ Important architectural point:
 - `tests/test_web_ui_server.py`
 - `README.md`
 - `PROJECT_CONTEXT.md`
+
+### Knowledge pipeline quality repairs (2026-03-23)
+
+- `app/scraping/sources.py`, `app/scraping/service.py`, `app/scraping/inecobank_extractor.py`
+  - Inecobank list-page expansion now ingests deposit/consumer-loan detail pages as first-class sources.
+- `app/scraping/acba_extractor.py`
+  - Acba tab/table content is rendered into retrieval-friendly structured text instead of lossy flattening.
+- `app/cleaning/cleaner.py`, `app/cleaning/service.py`, `app/utils.py`
+  - cleaner preserves financial short tokens (currencies, percentages, numeric ranges, brackets) and supports configurable debug drop logging.
+- `app/ingestion/chunking.py`
+  - semantic section-aware chunking with contextual overlap and table-safe splitting.
+- `app/models.py`, `app/storage/db.py`, `app/storage/repositories.py`, `app/storage/vector_store.py`
+  - richer chunk/vector metadata (`document_id`, `section_name`, `chunk_index`) and DB migration-safe schema upgrades.
+- `app/ingestion/service.py`
+  - ingestion observability per source and self-healing for legacy metadata/vector drift on unchanged content hashes.
+- `app/retrieval/classifier.py`, `app/retrieval/service.py`
+  - multi-bank detection plus source-aware retrieval selection to reduce fragmented mixed-bank evidence.
+- `app/llm/prompts.py`, `app/llm/service.py`
+  - grouped source/section prompt assembly and high-level prompt-source diagnostics.
+- `app/config/settings.py`, `app/bootstrap.py`, `.env.example`
+  - KB tuning/debugging controls moved to settings/env.
+- `tests/test_classifier.py`, `tests/test_retrieval_service.py`, `tests/test_chunking.py`, `tests/test_cleaner.py`, `tests/test_acba_extractor.py`, `tests/test_inecobank_extractor.py`
+  - regression coverage for multi-bank detection, coherent retrieval, structured extraction, and financial-token-safe cleaning.
 
 ## Why the problem existed
 
@@ -443,6 +470,21 @@ Startup logging now makes these contracts visible:
 - `VOICE_STT_RETRY_RMS_DBFS`
 - `VOICE_TRANSPORT_LOG_LEVEL`
 
+### Optional knowledge-base tuning defaults
+
+- `KB_CLEANING_DEBUG`
+- `KB_CLEANING_DEBUG_SAMPLE_SIZE`
+- `KB_CHUNK_MAX_CHARS`
+- `KB_CHUNK_OVERLAP_LINES`
+- `KB_RETRIEVAL_TOP_K`
+- `KB_RETRIEVAL_CANDIDATE_POOL_SIZE`
+- `KB_RETRIEVAL_MIN_SCORE`
+- `KB_RETRIEVAL_MIN_COMBINED_SCORE`
+- `KB_RETRIEVAL_MIN_LEXICAL_SCORE`
+- `KB_RETRIEVAL_MAX_CHUNKS_PER_SOURCE`
+- `KB_RETRIEVAL_ADJACENT_WINDOW`
+- `KB_RETRIEVAL_DEBUG`
+
 ### Token flow
 
 `app/voice/token.py`
@@ -514,7 +556,7 @@ pytest -q
 
 Current result:
 
-- `66 passed`
+- `70 passed`
 
 ### Verified in this update
 
@@ -636,9 +678,11 @@ Expected behavior:
 
 #### Inecobank
 
-- deposit list page covers product names, tags, and links, but not every detail field
+- deposits and consumer loans are now ingested from list pages plus detail pages
+- detail pages still do not always expose every numeric field in static HTML
 - exact rate/currency/minimum/term for `Simple Deposit` is not present in the current KB
 - branch extraction is still pending because `/en/map` is not a stable branch-list source
+- list-page refresh can intermittently fail with Cloudflare `403` from this environment; rerun usually recovers
 
 ## What needs to be sent
 
