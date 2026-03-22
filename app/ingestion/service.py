@@ -21,12 +21,14 @@ class IngestionPipeline:
         repository: MetadataRepository,
         vector_store: LocalNumpyVectorStore,
         openai_client: OpenAIClient,
+        chunk_max_chars: int = 1000,
+        chunk_overlap_lines: int = 2,
     ) -> None:
         self.settings = settings
         self.repository = repository
         self.vector_store = vector_store
         self.openai_client = openai_client
-        self.chunker = TextChunker()
+        self.chunker = TextChunker(max_chars=chunk_max_chars, overlap_lines=chunk_overlap_lines)
 
     def run(self, bank_name: str | None = None, topic: str | None = None) -> list[Path]:
         written_files: list[Path] = []
@@ -46,15 +48,34 @@ class IngestionPipeline:
             topic=document.topic,
             source_url=document.source_url,
         )
-        if active_hash == document.content_hash:
-            logger.info("Skipping unchanged document %s", clean_file)
-            return
-
         previous_chunk_ids = self.repository.get_active_chunk_ids(
             bank_name=document.bank_name,
             topic=document.topic,
             source_url=document.source_url,
         )
+        has_legacy_metadata = False
+        missing_vector_ids: list[str] = []
+        if active_hash == document.content_hash:
+            has_legacy_metadata = self.repository.has_legacy_chunk_metadata(
+                bank_name=document.bank_name,
+                topic=document.topic,
+                source_url=document.source_url,
+            )
+            missing_vector_ids = self.vector_store.missing_chunk_ids(previous_chunk_ids)
+        if active_hash == document.content_hash and not has_legacy_metadata and not missing_vector_ids:
+            logger.info("Skipping unchanged document %s", clean_file)
+            return
+        if active_hash == document.content_hash and has_legacy_metadata:
+            logger.info(
+                "Re-ingesting unchanged document due to legacy chunk metadata %s",
+                clean_file,
+            )
+        if active_hash == document.content_hash and missing_vector_ids:
+            logger.info(
+                "Re-ingesting unchanged document due to missing vectors source=%s missing_vectors=%s",
+                document.source_url,
+                len(missing_vector_ids),
+            )
         self.repository.deactivate_source(document.bank_name, document.topic, document.source_url)
         self.repository.insert_document(document, str(clean_file))
 
@@ -74,8 +95,21 @@ class IngestionPipeline:
                     bank_name=chunk.bank_name,
                     topic=chunk.topic,
                     vector=embedding,
+                    source_url=chunk.source_url,
+                    page_title=chunk.page_title,
+                    document_id=chunk.document_id,
+                    section_name=chunk.section_name,
+                    chunk_index=chunk.chunk_index,
                 )
                 for chunk, embedding in zip(chunks, embeddings)
             ]
         )
-        logger.info("Ingested %s chunks from %s", len(chunks), clean_file)
+        section_count = len({chunk.section_name for chunk in chunks if chunk.section_name})
+        logger.info(
+            "Ingested source=%s page=%s clean_len=%s chunk_count=%s section_count=%s",
+            document.source_url,
+            document.page_title,
+            len(document.clean_text),
+            len(chunks),
+            section_count,
+        )

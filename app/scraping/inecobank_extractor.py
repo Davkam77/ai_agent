@@ -2,11 +2,12 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from urllib.parse import urljoin
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup, Tag
 
 from app.models import ExtractionResult, SourceConfig, Topic
-from app.utils import dedupe_lines, normalize_whitespace
+from app.utils import dedupe_adjacent_lines, dedupe_lines, normalize_whitespace
 
 
 @dataclass(frozen=True, slots=True)
@@ -42,12 +43,33 @@ class InecobankExtractor:
     def __init__(self) -> None:
         self.selectors = InecobankSelectors()
 
+    def discover_child_urls(self, source: SourceConfig, html: str) -> list[str]:
+        if source.topic not in {Topic.DEPOSITS, Topic.CREDITS}:
+            return []
+        soup = BeautifulSoup(html, "html.parser")
+        details_selector = (
+            self.selectors.deposit_details_link
+            if source.topic == Topic.DEPOSITS
+            else self.selectors.loan_details_link
+        )
+        urls: list[str] = []
+        for link in soup.select(details_selector):
+            href = self._extract_link(source.source_url, link)
+            if not href or href == source.source_url:
+                continue
+            if source.child_url_prefixes and not any(href.startswith(prefix) for prefix in source.child_url_prefixes):
+                continue
+            urls.append(href)
+        return self._dedupe_preserve_order(urls)
+
     def extract(self, source: SourceConfig, html: str) -> ExtractionResult:
         soup = BeautifulSoup(html, "html.parser")
         page_title = self._page_title(soup)
 
         if source.topic == Topic.BRANCH_LOCATIONS:
             return self._extract_branches_placeholder(source, page_title)
+        if self._is_detail_page(source):
+            return self._extract_detail_page(source, soup, page_title)
 
         if source.topic == Topic.DEPOSITS:
             sections = self._extract_sections(
@@ -83,6 +105,35 @@ class InecobankExtractor:
         return ExtractionResult(
             page_title=page_title,
             raw_text=self._render_product_list_raw_text(structured_data),
+            structured_data=structured_data,
+        )
+
+    def _extract_detail_page(self, source: SourceConfig, soup: BeautifulSoup, page_title: str) -> ExtractionResult:
+        root = soup.select_one("main") or soup.body or soup
+        if not isinstance(root, Tag):
+            return self._extract_unstructured_page(source, page_title, "detail_root_missing")
+
+        for selector in self.selectors.ignored_ui_selectors:
+            for node in root.select(selector):
+                node.decompose()
+
+        product_title = self._text_or_default(root.select_one("h1"), "")
+        sections = self._extract_detail_sections(root)
+        if not sections:
+            return self._extract_unstructured_page(source, page_title, "detail_sections_empty")
+
+        structured_data = {
+            "page_type": "inecobank_product_detail_page",
+            "bank_name": source.bank_name,
+            "topic": source.topic.value,
+            "page_title": page_title,
+            "product_title": product_title or page_title,
+            "details_url": source.source_url,
+            "sections": sections,
+        }
+        return ExtractionResult(
+            page_title=product_title or page_title,
+            raw_text=self._render_detail_raw_text(structured_data),
             structured_data=structured_data,
         )
 
@@ -247,7 +298,7 @@ class InecobankExtractor:
                     features = product.get("features", [])
 
                     if product_title:
-                        lines.append(f"Product: {product_title}")
+                        lines.append(f"[Product: {product_title}]")
                     if description:
                         lines.append(description)
                     if isinstance(tags, list) and tags:
@@ -268,7 +319,82 @@ class InecobankExtractor:
                         lines.append(f"Apply URL: {apply_url}")
                     if image_url:
                         lines.append(f"Image URL: {image_url}")
-        return "\n".join(dedupe_lines(lines))
+        return "\n".join(dedupe_adjacent_lines(lines))
+
+    def _extract_detail_sections(self, root: Tag) -> list[dict[str, object]]:
+        section_map: dict[str, list[str]] = {}
+        section_order: list[str] = []
+        current_section = "Overview"
+
+        def ensure_section(name: str) -> None:
+            if name not in section_map:
+                section_map[name] = []
+                section_order.append(name)
+
+        ensure_section(current_section)
+        for node in root.find_all(["h1", "h2", "h3", "h4", "p", "li", "tr", "dt", "dd"], recursive=True):
+            if not isinstance(node, Tag):
+                continue
+            if node.name in {"h1", "h2", "h3", "h4"}:
+                heading = self._text_or_default(node, "")
+                if heading:
+                    current_section = heading
+                    ensure_section(current_section)
+                continue
+            if node.name == "p" and node.find_parent("li"):
+                continue
+            if node.name == "tr":
+                cells = [
+                    normalize_whitespace(cell.get_text(" ", strip=True))
+                    for cell in node.find_all(["th", "td"], recursive=False)
+                    if normalize_whitespace(cell.get_text(" ", strip=True))
+                ]
+                line = " | ".join(cells)
+            elif node.name == "li":
+                line = self._text_or_default(node, "")
+                if line:
+                    line = f"- {line}"
+            else:
+                line = self._text_or_default(node, "")
+            if not line:
+                continue
+            ensure_section(current_section)
+            section_map[current_section].append(line)
+
+        sections: list[dict[str, object]] = []
+        for name in section_order:
+            lines = dedupe_adjacent_lines(section_map.get(name, []))
+            if not lines:
+                continue
+            sections.append({"section_title": name, "lines": lines})
+        return sections
+
+    def _render_detail_raw_text(self, payload: dict[str, object]) -> str:
+        lines: list[str] = []
+        title = str(payload.get("product_title", "")).strip()
+        page_title = str(payload.get("page_title", "")).strip()
+        details_url = str(payload.get("details_url", "")).strip()
+        if title:
+            lines.append(title)
+        elif page_title:
+            lines.append(page_title)
+        if details_url:
+            lines.append(f"Details URL: {details_url}")
+
+        sections = payload.get("sections", [])
+        if isinstance(sections, list):
+            for section in sections:
+                if not isinstance(section, dict):
+                    continue
+                section_title = str(section.get("section_title", "")).strip() or "Section"
+                lines.append(f"[Section: {section_title}]")
+                section_lines = section.get("lines", [])
+                if isinstance(section_lines, list):
+                    for entry in section_lines:
+                        text = str(entry).strip()
+                        if text:
+                            lines.append(text)
+        return "\n".join(dedupe_adjacent_lines(lines))
 
     def _compose_feature_value(self, feature: Tag) -> str:
         value = self._text_or_default(feature.select_one(self.selectors.feature_value), "")
@@ -307,3 +433,23 @@ class InecobankExtractor:
         if not node:
             return default
         return normalize_whitespace(node.get_text(" ", strip=True)) or default
+
+    @staticmethod
+    def _is_detail_page(source: SourceConfig) -> bool:
+        if source.topic not in {Topic.DEPOSITS, Topic.CREDITS}:
+            return False
+        path = urlparse(source.source_url).path.rstrip("/")
+        if source.topic == Topic.DEPOSITS:
+            return path != "/en/Individual/deposits"
+        return path != "/en/Individual/consumer-loans"
+
+    @staticmethod
+    def _dedupe_preserve_order(values: list[str]) -> list[str]:
+        seen: set[str] = set()
+        output: list[str] = []
+        for value in values:
+            if not value or value in seen:
+                continue
+            seen.add(value)
+            output.append(value)
+        return output

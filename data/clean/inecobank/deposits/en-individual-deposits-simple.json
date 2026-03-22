@@ -1,0 +1,9 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "deposits",
+  "source_url": "https://www.inecobank.am/en/Individual/deposits/simple",
+  "page_title": "Simple Deposit",
+  "clean_text": "Simple Deposit\nDetails URL: https://www.inecobank.am/en/Individual/deposits/simple\n[Section: Invest Online]\nYou can open deposit accounts both in the branches of Inecobank and through our modern distance banking solutions, InecoOnline and InecoMobile.\n[Section: Fixed-Rate Long-Term Deposits]\nWhen choosing Inecobank as your deposit partner, you get the opportunity to invest in highly profitable and fixed-rate deposit accounts with up to 3 (three) years of maturity period.\nUpdated as of 04.03.2026 14:11",
+  "fetched_at": "2026-03-22T20:08:56+00:00",
+  "content_hash": "468cf3970ab0acb449b8e17768d148cdf8ca1f4d2fd3b96f08114f0ae0175c3e"
+}

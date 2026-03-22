@@ -37,7 +37,14 @@ def build_ingestion_pipeline(settings: Settings | None = None) -> IngestionPipel
     repository = MetadataRepository(resolved_settings.database_path)
     vector_store = LocalNumpyVectorStore(resolved_settings.vector_store_dir)
     openai_client = OpenAIClient(resolved_settings)
-    return IngestionPipeline(resolved_settings, repository, vector_store, openai_client)
+    return IngestionPipeline(
+        resolved_settings,
+        repository,
+        vector_store,
+        openai_client,
+        chunk_max_chars=resolved_settings.kb_chunk_max_chars,
+        chunk_overlap_lines=resolved_settings.kb_chunk_overlap_lines,
+    )
 
 
 def build_support_agent(settings: Settings | None = None) -> SupportAgentService:
@@ -47,7 +54,20 @@ def build_support_agent(settings: Settings | None = None) -> SupportAgentService
     vector_store = LocalNumpyVectorStore(resolved_settings.vector_store_dir)
     openai_client = OpenAIClient(resolved_settings)
     classifier = TopicClassifier()
-    retrieval_service = RetrievalService(repository, vector_store, openai_client, classifier=classifier)
+    retrieval_service = RetrievalService(
+        repository,
+        vector_store,
+        openai_client,
+        classifier=classifier,
+        min_score=resolved_settings.kb_retrieval_min_score,
+        top_k=resolved_settings.kb_retrieval_top_k,
+        candidate_pool_size=resolved_settings.kb_retrieval_candidate_pool_size,
+        min_combined_score=resolved_settings.kb_retrieval_min_combined_score,
+        min_lexical_score=resolved_settings.kb_retrieval_min_lexical_score,
+        max_chunks_per_source=resolved_settings.kb_retrieval_max_chunks_per_source,
+        adjacent_window=resolved_settings.kb_retrieval_adjacent_window,
+        debug_verbose=resolved_settings.kb_retrieval_debug,
+    )
     return SupportAgentService(retrieval_service, openai_client, classifier=classifier)
 
 

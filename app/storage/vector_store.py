@@ -25,6 +25,11 @@ class LocalNumpyVectorStore:
                     "chunk_id": record.chunk_id,
                     "bank_name": record.bank_name,
                     "topic": record.topic,
+                    "source_url": record.source_url,
+                    "page_title": record.page_title,
+                    "document_id": record.document_id,
+                    "section_name": record.section_name,
+                    "chunk_index": record.chunk_index,
                 },
                 "vector": self._normalize(np.array(record.vector, dtype=np.float32)),
             }
@@ -37,6 +42,13 @@ class LocalNumpyVectorStore:
         for chunk_id in chunk_ids:
             existing.pop(chunk_id, None)
         self._persist(existing)
+
+    def missing_chunk_ids(self, chunk_ids: list[str]) -> list[str]:
+        if not chunk_ids:
+            return []
+        state = self._load_state()
+        available = set(state.keys())
+        return [chunk_id for chunk_id in chunk_ids if chunk_id not in available]
 
     def search(
         self,

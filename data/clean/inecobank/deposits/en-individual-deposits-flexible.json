@@ -1,0 +1,9 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "deposits",
+  "source_url": "https://www.inecobank.am/en/Individual/deposits/flexible",
+  "page_title": "Flexible Deposit",
+  "clean_text": "Flexible Deposit\nDetails URL: https://www.inecobank.am/en/Individual/deposits/flexible\n[Section: Invest Online]\nYou can open deposit accounts both in the branches of Inecobank and through our modern distance banking solutions, InecoOnline and InecoMobile.\n[Section: Highly-Profitable Deposits]\nUpdated as of 04.03.2026 14:11",
+  "fetched_at": "2026-03-22T20:08:56+00:00",
+  "content_hash": "7f3bb7d3840513c2f6740ce06e4259e8786cf07b193827e2f596a7b9bccacc38"
+}

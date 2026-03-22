@@ -1,0 +1,9 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "deposits",
+  "source_url": "https://www.inecobank.am/en/Individual/deposits/accumulative",
+  "page_title": "Accumulative deposit",
+  "clean_text": "Accumulative deposit\nDetails URL: https://www.inecobank.am/en/Individual/deposits/accumulative\n[Section: Minimum limit and currency selection]\nSaving through Cumulative deposit becomes easier, as even the minimum funds will be enough to start, and the choice of the currency is up to you.\n[Section: Replenishment freedom and online funds management]\nThe Accumulative deposit allows you to replenish it throughout the maturity period of the deposit, you can replenish it both at the Bank's branches and through the InecoMobile application any time․\nUpdated as of 04.03.2026 14:11",
+  "fetched_at": "2026-03-22T20:08:56+00:00",
+  "content_hash": "3dec5bc30427fed0d86dfc605b5dded3a2ea4c05977ba0454873df8c92992872"
+}

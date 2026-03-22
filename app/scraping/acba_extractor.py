@@ -7,7 +7,7 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup, Tag
 
 from app.models import ExtractionResult, SourceConfig, Topic
-from app.utils import dedupe_lines, normalize_whitespace
+from app.utils import dedupe_adjacent_lines, dedupe_lines, normalize_whitespace
 
 
 @dataclass(frozen=True, slots=True)
@@ -235,7 +235,7 @@ class AcbaExtractor:
             lines.append(summary)
         business_card = payload.get("business_card", [])
         if isinstance(business_card, list) and business_card:
-            lines.append("Business card")
+            lines.append("[Section: Business card]")
             for item in business_card:
                 if isinstance(item, dict):
                     label = str(item.get("label", "")).strip()
@@ -249,13 +249,14 @@ class AcbaExtractor:
                     continue
                 tab_title = str(tab.get("title", "")).strip()
                 tab_text = str(tab.get("content_text", "")).strip()
+                tab_html = str(tab.get("content_html", "")).strip()
                 if tab_title:
-                    lines.append(f"Tab: {tab_title}")
-                if tab_text:
-                    lines.append(tab_text)
+                    lines.append(f"[Section: {tab_title}]")
+                rendered_lines = self._render_tab_content_lines(tab_html, tab_text)
+                lines.extend(rendered_lines)
         cta_links = payload.get("cta_links", [])
         if isinstance(cta_links, list) and cta_links:
-            lines.append("CTA links")
+            lines.append("[Section: CTA links]")
             for item in cta_links:
                 if isinstance(item, dict):
                     label = str(item.get("label", "")).strip()
@@ -264,7 +265,7 @@ class AcbaExtractor:
                         lines.append(f"{label}: {href}".strip(": "))
         if last_update:
             lines.append(f"Last updated: {last_update}")
-        return "\n".join(dedupe_lines(lines))
+        return "\n".join(dedupe_adjacent_lines(lines))
 
     def _render_branches_raw_text(self, payload: dict[str, object]) -> str:
         lines: list[str] = []
@@ -307,6 +308,37 @@ class AcbaExtractor:
                         if schedule_text:
                             lines.append(f"Schedule: {schedule_text}")
         return "\n".join(dedupe_lines(lines))
+
+    def _render_tab_content_lines(self, content_html: str, fallback_text: str) -> list[str]:
+        if not content_html:
+            return [line for line in fallback_text.splitlines() if line.strip()]
+        soup = BeautifulSoup(content_html, "html.parser")
+        lines: list[str] = []
+        # Preserve table semantics first so rate sheets remain queryable.
+        for table in soup.find_all("table"):
+            for row in table.find_all("tr"):
+                cells = [
+                    normalize_whitespace(cell.get_text(" ", strip=True))
+                    for cell in row.find_all(["th", "td"], recursive=False)
+                    if normalize_whitespace(cell.get_text(" ", strip=True))
+                ]
+                if cells:
+                    lines.append(" | ".join(cells))
+
+        for node in soup.find_all(["p", "li", "div"], recursive=True):
+            if node.find_parent("table"):
+                continue
+            text = normalize_whitespace(node.get_text(" ", strip=True))
+            if not text:
+                continue
+            if node.name == "li":
+                lines.append(f"- {text}")
+            else:
+                lines.append(text)
+
+        if not lines and fallback_text:
+            lines.extend(line for line in fallback_text.splitlines() if line.strip())
+        return dedupe_adjacent_lines(lines)
 
     @staticmethod
     def _extract_region_id(container: Tag | None) -> str | None:

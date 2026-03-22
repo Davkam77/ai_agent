@@ -52,16 +52,36 @@ class ScrapingPipeline:
                     raw_text=index_text,
                     fetched_at=utc_now_iso(),
                     content_hash=sha256_text(index_text),
-                    structured_data={"page_type": "acba_seed_index", "child_urls": child_urls},
+                    structured_data={
+                        "page_type": "seed_index",
+                        "bank_name": source.bank_name,
+                        "topic": source.topic.value,
+                        "source_url": source.source_url,
+                        "child_urls": child_urls,
+                    },
                 )
-                index_output_path = self._build_output_path(source)
+                index_output_path = self._build_seed_output_path(source)
                 write_json(index_output_path, index_payload.to_dict())
                 written_files.append(index_output_path)
+                parent_written = self._extract_and_save_source(source, extractor, html)
+                written_files.extend(parent_written)
                 for child_url in child_urls:
                     child_source = replace(source, source_url=child_url, expand_urls=False)
-                    written_files.extend(self._scrape_source(child_source))
+                    try:
+                        written_files.extend(self._scrape_source(child_source))
+                    except Exception:
+                        logger.exception(
+                            "Failed to scrape expanded child page bank=%s topic=%s parent=%s child=%s",
+                            source.bank_name,
+                            source.topic.value,
+                            source.source_url,
+                            child_url,
+                        )
                 return written_files
 
+        return self._extract_and_save_source(source, extractor, html)
+
+    def _extract_and_save_source(self, source: SourceConfig, extractor: object, html: str) -> list[Path]:
         extraction = extractor.extract(source, html)
         if extraction.skip_document:
             logger.info("Skipping unstructured page %s", source.source_url)
@@ -90,4 +110,14 @@ class ScrapingPipeline:
             / slugify(source.bank_name)
             / source.topic.value
             / f"{slug_source}.json"
+        )
+
+    def _build_seed_output_path(self, source: SourceConfig) -> Path:
+        parsed = urlparse(source.source_url)
+        slug_source = slugify(parsed.path.replace("/", "-"))
+        return (
+            self.settings.raw_output_dir
+            / slugify(source.bank_name)
+            / source.topic.value
+            / f"{slug_source}-seed-index.json"
         )

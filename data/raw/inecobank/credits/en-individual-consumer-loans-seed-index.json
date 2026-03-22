@@ -1,0 +1,21 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "credits",
+  "source_url": "https://www.inecobank.am/en/Individual/consumer-loans",
+  "page_title": "Inecobank credits seed index",
+  "raw_text": "Discovered child pages\nhttps://www.inecobank.am/en/Individual/consumer-loans/1-click\nhttps://www.inecobank.am/en/Individual/consumer-loans/secured-consumer-loan\nhttps://www.inecobank.am/en/Individual/consumer-loans/deposit-secured\nhttps://www.inecobank.am/en/Individual/consumer-loans/gold-pledge-secured",
+  "fetched_at": "2026-03-22T20:11:19+00:00",
+  "content_hash": "f9ddcb87f74cf32c28b10be7a5821806e650764299be3a54fe5b2c05f1015c32",
+  "structured_data": {
+    "page_type": "seed_index",
+    "bank_name": "Inecobank",
+    "topic": "credits",
+    "source_url": "https://www.inecobank.am/en/Individual/consumer-loans",
+    "child_urls": [
+      "https://www.inecobank.am/en/Individual/consumer-loans/1-click",
+      "https://www.inecobank.am/en/Individual/consumer-loans/secured-consumer-loan",
+      "https://www.inecobank.am/en/Individual/consumer-loans/deposit-secured",
+      "https://www.inecobank.am/en/Individual/consumer-loans/gold-pledge-secured"
+    ]
+  }
+}

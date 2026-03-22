@@ -11,6 +11,7 @@ from app.utils import iter_json_files, read_json, slugify, write_json
 logger = logging.getLogger(__name__)
 
 HELPER_PAGE_TYPES = {
+    "seed_index",
     "acba_seed_index",
     "acba_unstructured_page",
     "inecobank_branches_pending",
@@ -22,7 +23,7 @@ class CleaningPipeline:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self.settings.ensure_runtime_dirs()
-        self.cleaner = TextCleaner()
+        self.cleaner = TextCleaner(sample_limit=self.settings.kb_cleaning_debug_sample_size)
 
     def run(self, bank_name: str | None = None, topic: str | None = None) -> list[Path]:
         written_files: list[Path] = []
@@ -50,10 +51,19 @@ class CleaningPipeline:
                 written_files.append(output_path)
                 logger.info("Wrote tombstone clean JSON for helper raw file %s", raw_file)
                 continue
-            cleaned = self.cleaner.clean_document(payload)
+            cleaned, stats = self.cleaner.clean_document_with_stats(payload)
             write_json(output_path, cleaned.to_dict())
             written_files.append(output_path)
             logger.info("Saved clean JSON to %s", output_path)
+            if self.settings.kb_cleaning_debug:
+                logger.info(
+                    "Cleaning stats source=%s total_lines=%s kept_lines=%s removed_lines=%s sample_removed=%s",
+                    payload.source_url,
+                    stats.total_lines,
+                    stats.kept_lines,
+                    stats.removed_lines,
+                    stats.removed_samples,
+                )
         return written_files
 
     def _output_path(self, bank_name: str, topic: str, filename: str) -> Path:

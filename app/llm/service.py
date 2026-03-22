@@ -128,6 +128,26 @@ class SupportAgentService:
                 },
             )
 
+        grouped_sources: dict[tuple[str, str, str], set[str]] = {}
+        for chunk in chunks:
+            key = (chunk.bank_name, chunk.page_title, chunk.source_url)
+            grouped_sources.setdefault(key, set())
+            if chunk.section_name:
+                grouped_sources[key].add(chunk.section_name)
+
+        logger.info(
+            "SupportAgent prompt_sources=%s",
+            [
+                {
+                    "bank_name": bank_name,
+                    "page_title": page_title,
+                    "source_url": source_url,
+                    "sections": sorted(section_names),
+                }
+                for (bank_name, page_title, source_url), section_names in grouped_sources.items()
+            ],
+        )
+
         answer = self.openai_client.generate_answer(
             system_prompt=build_answer_system_prompt(),
             user_prompt=build_answer_user_prompt(question, topic, chunks),

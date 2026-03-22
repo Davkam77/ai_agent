@@ -1,0 +1,38 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "credits",
+  "source_url": "https://www.inecobank.am/en/Individual/consumer-loans/secured-consumer-loan",
+  "page_title": "Secured by Collateral Loan",
+  "raw_text": "Secured by Collateral Loan\nDetails URL: https://www.inecobank.am/en/Individual/consumer-loans/secured-consumer-loan\n[Section: Secured by Collateral Loan]\nApply and get loans collateralized by movable or immovable property without any proof of Income.\n[Section: Secured Loan without any proof of income]\nApply Inecobank and get loans secured by movable or immovable property with a simplified procedure. The loan can be formed without proof of income.\n[Section: Simple and Fast]\nGet a consumer loan secured by movable or immovable property in Inecobank’s branches with a simplified procedure. Apply for a loan and your loan application will be reviewed in the shortest time possible, without any application fees.\nUpdated as of 12.03.2026 15:25",
+  "fetched_at": "2026-03-22T20:11:22+00:00",
+  "content_hash": "81d28db88a20e5400b15a724fe6a72d662a948c4221ca15d5a1a5eb56e345973",
+  "structured_data": {
+    "page_type": "inecobank_product_detail_page",
+    "bank_name": "Inecobank",
+    "topic": "credits",
+    "page_title": "Pledge Secured Loans | INECOBANK",
+    "product_title": "Secured by Collateral Loan",
+    "details_url": "https://www.inecobank.am/en/Individual/consumer-loans/secured-consumer-loan",
+    "sections": [
+      {
+        "section_title": "Secured by Collateral Loan",
+        "lines": [
+          "Apply and get loans collateralized by movable or immovable property without any proof of Income."
+        ]
+      },
+      {
+        "section_title": "Secured Loan without any proof of income",
+        "lines": [
+          "Apply Inecobank and get loans secured by movable or immovable property with a simplified procedure. The loan can be formed without proof of income."
+        ]
+      },
+      {
+        "section_title": "Simple and Fast",
+        "lines": [
+          "Get a consumer loan secured by movable or immovable property in Inecobank’s branches with a simplified procedure. Apply for a loan and your loan application will be reviewed in the shortest time possible, without any application fees.",
+          "Updated as of 12.03.2026 15:25"
+        ]
+      }
+    ]
+  }
+}

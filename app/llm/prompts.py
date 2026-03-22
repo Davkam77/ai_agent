@@ -80,7 +80,10 @@ def build_answer_system_prompt() -> str:
         "Answer only from the provided official evidence. "
         "Respond in natural, conversational Armenian. "
         "Write in complete spoken sentences that sound natural when read aloud. "
-        "Prefer short connected prose over dry bureaucratic wording. "
+        "Prioritize factual completeness over over-compression when evidence includes multiple conditions, terms, rates, amounts, or options. "
+        "For product-specific questions, enumerate all relevant official conditions present in evidence. "
+        "For table-like evidence, preserve row meaning and avoid dropping currencies, terms, or percentages. "
+        "Prefer concise structure, but do not omit relevant official details that answer the user question. "
         "Use bullets only when a direct comparison is genuinely clearer. "
         "If the user asks a generic question without a bank name and the evidence covers multiple banks, summarize by bank. "
         "If a requested field is missing from the evidence, clearly say that the official retrieved data does not contain that field. "
@@ -92,15 +95,33 @@ def build_answer_system_prompt() -> str:
 
 def build_answer_user_prompt(question: str, topic: str, chunks: list[RetrievedChunk]) -> str:
     source_blocks = []
+    grouped: dict[tuple[str, str, str], list[RetrievedChunk]] = {}
+    order: list[tuple[str, str, str]] = []
     for chunk in chunks:
+        key = (chunk.bank_name, chunk.page_title, chunk.source_url)
+        if key not in grouped:
+            grouped[key] = []
+            order.append(key)
+        grouped[key].append(chunk)
+
+    for key in order:
+        bank_name, page_title, source_url = key
+        group_chunks = sorted(grouped[key], key=lambda item: (item.chunk_index, item.chunk_id))
+        evidence_lines: list[str] = []
+        for chunk in group_chunks:
+            section_name = chunk.section_name.strip()
+            if section_name:
+                evidence_lines.append(f"[Section: {section_name}]")
+            evidence_lines.append(chunk.content)
         source_blocks.append(
             "\n".join(
                 [
                     "<official_source>",
-                    f"<bank>{chunk.bank_name}</bank>",
-                    f"<page_title>{chunk.page_title}</page_title>",
+                    f"<bank>{bank_name}</bank>",
+                    f"<page_title>{page_title}</page_title>",
+                    f"<source_url>{source_url}</source_url>",
                     "<evidence>",
-                    chunk.content,
+                    "\n\n".join(evidence_lines).strip(),
                     "</evidence>",
                     "</official_source>",
                 ]

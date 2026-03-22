@@ -71,8 +71,9 @@ This process model is explicit because the forensic analysis showed that the ear
 
 ### Inecobank
 
-- bank-specific extractor for deposits list page
-- bank-specific extractor for consumer loans list page
+- bank-specific extractor for deposits and consumer-loans list pages
+- list-page expansion into per-product detail pages for deposits and consumer loans
+- detail pages ingested as first-class sources with section-preserving text
 - branches remain excluded from final retrieval because `/en/map` is not yet a stable branch-record source
 
 ## Runtime flow
@@ -104,8 +105,9 @@ For supported banking questions the runtime does:
 5. build a multilingual retrieval query
 6. run topic-scoped vector search
 7. rerank with hybrid semantic + lexical scoring
-8. diversify results across banks when the user did not specify a bank
-9. generate a natural Armenian answer only from retrieved official evidence
+8. apply source-aware chunk selection (same page/section first, then adjacent context chunks)
+9. diversify results across banks when the user did not specify a single bank, including explicit multi-bank comparison questions
+10. generate a natural Armenian answer only from retrieved official evidence
 
 If a requested field is not present in retrieved official data, the answer says so explicitly instead of inventing it.
 
@@ -303,7 +305,7 @@ OPENAI_CHAT_MODEL=gpt-4.1-mini
 OPENAI_CHAT_TEMPERATURE=0.1
 OPENAI_CHAT_TOP_P=1.0
 OPENAI_CHAT_MAX_COMPLETION_TOKENS=500
-OPENAI_CHAT_VERBOSITY=low
+OPENAI_CHAT_VERBOSITY=medium
 OPENAI_STT_MODEL=gpt-4o-mini-transcribe
 OPENAI_TTS_MODEL=gpt-4o-mini-tts
 OPENAI_TTS_VOICE=sage
@@ -331,6 +333,23 @@ VOICE_MIN_TRANSCRIPTION_RMS_DBFS=-54.0
 VOICE_MIN_TRANSCRIPTION_PEAK_DBFS=-36.0
 VOICE_STT_RETRY_DURATION_SECONDS=0.7
 VOICE_STT_RETRY_RMS_DBFS=-46.0
+```
+
+### Optional KB cleaning/retrieval tuning
+
+```env
+KB_CLEANING_DEBUG=false
+KB_CLEANING_DEBUG_SAMPLE_SIZE=8
+KB_CHUNK_MAX_CHARS=1000
+KB_CHUNK_OVERLAP_LINES=2
+KB_RETRIEVAL_TOP_K=7
+KB_RETRIEVAL_CANDIDATE_POOL_SIZE=40
+KB_RETRIEVAL_MIN_SCORE=0.2
+KB_RETRIEVAL_MIN_COMBINED_SCORE=0.26
+KB_RETRIEVAL_MIN_LEXICAL_SCORE=0.12
+KB_RETRIEVAL_MAX_CHUNKS_PER_SOURCE=3
+KB_RETRIEVAL_ADJACENT_WINDOW=1
+KB_RETRIEVAL_DEBUG=false
 ```
 
 Important:
@@ -448,7 +467,7 @@ python -m scripts.clean
 python -m scripts.ingest
 ```
 
-The ingestion step updates only changed sources by `content_hash`.
+Ingestion updates changed sources by `content_hash`. The current ingestion logic also auto-rebuilds unchanged sources when it detects legacy chunk metadata or missing vectors, so older KB snapshots migrate forward without manual DB reset.
 
 ## How to verify
 
@@ -460,7 +479,7 @@ pytest -q
 
 Current result:
 
-- `66 passed`
+- `70 passed`
 
 ### Startup and orchestration smoke checks
 
@@ -522,7 +541,7 @@ Expected behavior:
 
 ### What was actually verified in this update
 
-- `pytest -q` passed with `66 passed`
+- `pytest -q` passed with `70 passed`
 - `python -m scripts.generate_livekit_token --room smoke-room --identity smoke-user` produced a valid token
 - `build_voice_runtime()` bootstrap completed successfully
 - `build_livekit_test_ui_server(...).build_client_config()` now exposes browser capture defaults and quality mode
@@ -564,7 +583,8 @@ Expected behavior:
 
 - `Inecobank` branches are still pending because `/en/map` does not yet expose a stable branch-record source for ingestion.
 - `Ameriabank` deposits and consumer-loan coverage is still shallow in the current KB because extraction still captures mostly list-level/static content, not full product-detail fields.
-- `Inecobank` deposit list pages expose product cards, but not every detail field such as exact rates, currencies, or minimum amounts for each product.
+- `Inecobank` deposits and consumer loans now ingest detail pages, but some product pages still do not expose exact rate tables/limits in static HTML.
+- `Inecobank` deposits list-page scraping can intermittently hit Cloudflare `403` from this environment; previously scraped detail pages remain usable in KB, but fresh refresh may need retry.
 - The current voice runtime still uses a lightweight silence detector, not a production-grade VAD/turn detector.
 - Audio preprocessing is intentionally conservative; it adds gain staging and normalization for STT, but it is not a full DSP, denoiser, or acoustic echo cancellation pipeline on the Python side.
 - The local web UI is intentionally minimal and focused on room connection, microphone control, remote audio playback, and event logging, not on polished product UX.

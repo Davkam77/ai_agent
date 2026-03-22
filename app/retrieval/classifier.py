@@ -128,9 +128,16 @@ class TopicClassifier:
             return None
         return ranked[0][0].value
 
-    def detect_bank(self, question: str) -> str | None:
+    def detect_banks(self, question: str) -> list[str]:
         lowered = normalize_text(question)
+        detected: list[str] = []
         for bank_name, aliases in _NORMALIZED_BANK_ALIASES.items():
             if any(alias and alias in lowered for alias in aliases):
-                return bank_name
+                detected.append(bank_name)
+        return detected
+
+    def detect_bank(self, question: str) -> str | None:
+        detected = self.detect_banks(question)
+        if len(detected) == 1:
+            return detected[0]
         return None

@@ -1,0 +1,20 @@
+{
+  "bank_name": "Inecobank",
+  "topic": "deposits",
+  "source_url": "https://www.inecobank.am/en/Individual/deposits",
+  "page_title": "Inecobank deposits seed index",
+  "raw_text": "Discovered child pages\nhttps://www.inecobank.am/en/Individual/deposits/simple\nhttps://www.inecobank.am/en/Individual/deposits/flexible\nhttps://www.inecobank.am/en/Individual/deposits/accumulative",
+  "fetched_at": "2026-03-22T20:08:54+00:00",
+  "content_hash": "3df9a9a362b994c859bb50dacb9fcab13e0d8164d5d218950f704639d755a241",
+  "structured_data": {
+    "page_type": "seed_index",
+    "bank_name": "Inecobank",
+    "topic": "deposits",
+    "source_url": "https://www.inecobank.am/en/Individual/deposits",
+    "child_urls": [
+      "https://www.inecobank.am/en/Individual/deposits/simple",
+      "https://www.inecobank.am/en/Individual/deposits/flexible",
+      "https://www.inecobank.am/en/Individual/deposits/accumulative"
+    ]
+  }
+}

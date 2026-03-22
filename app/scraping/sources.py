@@ -57,6 +57,8 @@ BANK_SOURCES: tuple[SourceConfig, ...] = (
         source_url="https://www.inecobank.am/en/Individual/consumer-loans",
         fetcher="requests",
         extractor="inecobank",
+        expand_urls=True,
+        child_url_prefixes=("https://www.inecobank.am/en/Individual/consumer-loans/",),
         content_selectors=("main",),
     ),
     SourceConfig(
@@ -65,6 +67,8 @@ BANK_SOURCES: tuple[SourceConfig, ...] = (
         source_url="https://www.inecobank.am/en/Individual/deposits",
         fetcher="requests",
         extractor="inecobank",
+        expand_urls=True,
+        child_url_prefixes=("https://www.inecobank.am/en/Individual/deposits/",),
         content_selectors=("main",),
     ),
     SourceConfig(
